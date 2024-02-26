@@ -7,5 +7,22 @@
 
 \begin{document}
  \maketitle
- \section*{Chapter 5}
+ \setcounter{section}{3}
+
+ \begin{prob} %trishan 1
+  (UAG 5.1) A rgular function on $\mathbb{P}^1$ is constant. Deduce that there are no non-constant morphisms $\mathbb{P}^1 \to \A^m$ for $m \geq 1$.
+ \end{prob}
+
+\sol. Suppose  $f \in k(\mathbb{P}^1)$ be a rational function, which is regular everywhere. If we restrict it to the affine piece $\A_{(0)}$, we get $f(x,1) = p(x) \in k[x]$ (as for the case of affine variety $\operatorname{dom} f = V$ iff $f \in k[V]$). Similarly, we can restrict $f$ to another affine piece $\A_{\infty}$. We get, $f(1,y) = f(1/y,1) = p(1/y) \in k[y]$. It is possible iff $p$ is constant.
+
+\vspace*{0.2cm}
+
+\noindent Any morphisms  $\mathbb{P}^1 \to \A^m$ can be given by $(f_1,\cdots,f_m)$ where $f_i$ are regular on $\mathbb{P}^1$. Thus the function $f$ is constant by the previous part. \Qed
+
+\begin{prob} %trishan 2
+    (UAG 5.7) Let $\varphi : \mathbb{P}^1 \to \mathbb{P}^1$ be an isomorphism; identify $\varphi$ as subvariety of $\mathbb{P}^1 \times \mathbb{P}^1\subset \mathbb{P}^3$. Now do the same if $\varphi : \Pn^1 \to \Pn^1$ is given by map $(X,Y)\mapsto (X^2,Y^2)$.
+\end{prob} 
+
+\sol 
+ 
 \end{document}

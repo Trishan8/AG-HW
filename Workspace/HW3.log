@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.12) (preloaded format=pdflatex 2024.2.26)  26 FEB 2024 23:30
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.12) (preloaded format=pdflatex 2024.2.26)  27 FEB 2024 01:12
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**c:/Users/trish/Downloads/Sem-6/AG-HW/HW3.tex
-(c:/Users/trish/Downloads/Sem-6/AG-HW/HW3.tex
+**c:/Users/trish/Downloads/Sem-6/AG-HW/Workspace/HW3.tex
+(c:/Users/trish/Downloads/Sem-6/AG-HW/Workspace/HW3.tex
 LaTeX2e <2023-11-01>
 L3 programming layer <2023-12-11>
 (C:\Users\trish\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls
@@ -715,6 +715,7 @@ Package: fancyhdr 2022/11/09 v4.1 Extensive control of page headers and footers
 Package hyperref Info: Option `colorlinks' set `true' on input line 47.
 \c@tcb@cnt@Thm=\count344
 \c@tcb@cnt@Def=\count345
+\c@prob=\count346
 ) (C:\Users\trish\AppData\Local\Programs\MiKTeX\tex/latex/ebgaramond\ebgaramond.sty
 Package: ebgaramond 2022/09/10 (Bob Tennent and autoinst) Style file for EB Garamond fonts.
  (C:\Users\trish\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifxetex.sty
@@ -727,7 +728,7 @@ Package: xkeyval 2022/06/16 v2.9 package option processing (HA)
 \XKV@toks=\toks52
 \XKV@tempa@toks=\toks53
 )
-\XKV@depth=\count346
+\XKV@depth=\count347
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 )) (C:\Users\trish\AppData\Local\Programs\MiKTeX\tex/latex/base\textcomp.sty
 Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
@@ -819,16 +820,16 @@ Package hyperref Info: Link coloring ON on input line 8.
 
  (C:\Users\trish\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count347
+\scratchcounter=\count348
 \scratchdimen=\dimen305
 \scratchbox=\box90
-\nofMPsegments=\count348
-\nofMParguments=\count349
+\nofMPsegments=\count349
+\nofMParguments=\count350
 \everyMPshowfont=\toks54
-\MPscratchCnt=\count350
+\MPscratchCnt=\count351
 \MPscratchDim=\dimen306
-\MPnumerator=\count351
-\makeMPintoPDFobject=\count352
+\MPnumerator=\count352
+\makeMPintoPDFobject=\count353
 \everyMPtoPDFconversion=\toks55
 ) (C:\Users\trish\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -836,7 +837,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
  (C:\Users\trish\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-\c@lstlisting=\count353
+\c@lstlisting=\count354
  (C:\Users\trish\AppData\Local\Programs\MiKTeX\tex/latex/pdflscape\pdflscape.sty
 Package: pdflscape 2022-10-27 v0.13 Display of landscape pages in PDF
  (C:\Users\trish\AppData\Local\Programs\MiKTeX\tex/latex/pdflscape\pdflscape-nometadata.sty
@@ -846,8 +847,8 @@ Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
 )
 Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 ))
-\c@mv@tabular=\count354
-\c@mv@boldtabular=\count355
+\c@mv@tabular=\count355
+\c@mv@boldtabular=\count356
 LaTeX Font Info:    Font shape `OT1/EBGaramond-OsF/m/n' will be
 (Font)              scaled to size 20.74pt on input line 10.
 LaTeX Font Info:    Font shape `OT1/EBGaramond-OsF/m/n' will be
@@ -864,11 +865,15 @@ LaTeX Font Info:    Trying to load font information for U+rsfs on input line 10.
  (C:\Users\trish\AppData\Local\Programs\MiKTeX\tex/latex/jknappen\ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
-LaTeX Font Info:    Font shape `OT1/EBGaramond-OsF/m/sc' will be
-(Font)              scaled to size 13.0pt on input line 10.
+LaTeX Font Info:    Font shape `OT1/EBGaramond-OsF/m/it' will be
+(Font)              scaled to size 12.0pt on input line 12.
+LaTeX Font Info:    Font shape `OT1/EBGaramond-OsF/b/n' will be
+(Font)              scaled to size 12.0pt on input line 13.
+LaTeX Font Info:    Font shape `OT1/EBGaramond-OsF/b/it' will be
+(Font)              scaled to size 12.0pt on input line 16.
  [1
 
-{C:/Users/trish/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/trish/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/ebgaramond/ebg_qn2lct.enc}{C:/Users/trish/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/ebgaramond/ebg_4a6c3c.enc}] (HW3.aux)
+{C:/Users/trish/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/trish/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/ebgaramond/ebg_qn2lct.enc}{C:/Users/trish/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/ebgaramond/ebg_ne3tkd.enc}] (HW3.aux)
  ***********
 LaTeX2e <2023-11-01>
 L3 programming layer <2023-12-11>
@@ -877,17 +882,17 @@ Package rerunfilecheck Info: File `HW3.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 32188 strings out of 474495
- 648648 string characters out of 5743935
- 1928460 words of memory out of 5000000
- 53891 multiletter control sequences out of 15000+600000
- 565469 words of font info for 56 fonts, out of 8000000 for 9000
+ 32243 strings out of 474495
+ 649622 string characters out of 5743935
+ 1933460 words of memory out of 5000000
+ 53935 multiletter control sequences out of 15000+600000
+ 574186 words of font info for 77 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 116i,6n,121p,577b,469s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<C:/Users/trish/AppData/Local/Programs/MiKTeX/fonts/type1/public/ebgaramond/EBGaramond-Regular.pfb>
-Output written on HW3.pdf (1 page, 36252 bytes).
+ 116i,6n,121p,587b,469s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<C:/Users/trish/AppData/Local/Programs/MiKTeX/fonts/type1/public/ebgaramond/EBGaramond-Bold.pfb><C:/Users/trish/AppData/Local/Programs/MiKTeX/fonts/type1/public/ebgaramond/EBGaramond-BoldItalic.pfb><C:/Users/trish/AppData/Local/Programs/MiKTeX/fonts/type1/public/ebgaramond/EBGaramond-Italic.pfb><C:/Users/trish/AppData/Local/Programs/MiKTeX/fonts/type1/public/ebgaramond/EBGaramond-Regular.pfb><C:/Users/trish/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/trish/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/trish/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/trish/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/trish/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/trish/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/trish/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Users/trish/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on HW3.pdf (1 page, 151274 bytes).
 PDF statistics:
- 60 PDF objects out of 1000 (max. 8388607)
- 2 named destinations out of 1000 (max. 500000)
+ 114 PDF objects out of 1000 (max. 8388607)
+ 4 named destinations out of 1000 (max. 500000)
  157 words of extra memory for PDF output out of 10000 (max. 10000000)
 

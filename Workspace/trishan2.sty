@@ -46,11 +46,12 @@
  %bib \ ref
 \hypersetup{colorlinks = true, linkcolor = blue, urlcolor = link} %link colours
 
-\titleformat{\section}[hang]{\fontsize{13}{14}\scshape\centering}{\thesection .}{0.21em}{} %section style
+\titleformat{\section}[hang]{\fontsize{15}{17}\sffamily\bfseries\centering}{\S\thesection .}{0.21em}{} %section style
 \titleformat{\subsection}[hang]{\fontsize{12}{13}\bfseries}{$\S\,$\textcolor{purple}\thesubsection}{0.21em}{}
 
 % short commands
     \newcommand{\titles}[1]{\title{\textbf{#1}}}
+    \newcommand{\sol}{\noindent\textbf{\textit{Solution}}}
  % General math commands
      \newcommand{\bb}[1]{\mathbb{#1}}
      \newcommand{\N}{\bb{N}}
@@ -58,6 +59,8 @@
      \newcommand{\Q}{\bb{Q}}
      \newcommand{\R}{\mathbb{R}}
      \newcommand{\C}{\bb{C}}
+     \newcommand{\A}{\bb{A}}
+     \newcommand{\Pn}{\mathbb{P}}
      \newcommand{\msk}{\medskip}
      \newcommand{\ssk}{\smallskip}
      \newcommand{\bsk}{\bigskip}
@@ -178,3 +181,5 @@
     before upper={\tcbtitle},
     separator sign none,
     description delimiters none}{df}
+
+    \newtheorem{prob}{\color{blue!50!black}Problem}[section]
