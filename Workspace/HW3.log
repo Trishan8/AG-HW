@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.12) (preloaded format=pdflatex 2024.2.26)  27 FEB 2024 22:22
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.12) (preloaded format=pdflatex 2024.2.26)  27 FEB 2024 23:00
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -700,19 +700,8 @@ Package: scalerel 2016/12/29 v1.8 Routines for constrained scaling and stretchin
 \mnxsrwidth=\skip71
 \LMex=\skip72
 \LMpt=\skip73
-) (C:\Users\trish\AppData\Local\Programs\MiKTeX\tex/latex/fancyhdr\fancyhdr.sty
-Package: fancyhdr 2022/11/09 v4.1 Extensive control of page headers and footers
-\f@nch@headwidth=\skip74
-\f@nch@O@elh=\skip75
-\f@nch@O@erh=\skip76
-\f@nch@O@olh=\skip77
-\f@nch@O@orh=\skip78
-\f@nch@O@elf=\skip79
-\f@nch@O@erf=\skip80
-\f@nch@O@olf=\skip81
-\f@nch@O@orf=\skip82
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 47.
+Package hyperref Info: Option `colorlinks' set `true' on input line 43.
 \c@tcb@cnt@Thm=\count344
 \c@tcb@cnt@Def=\count345
 \c@prob=\count346
@@ -877,7 +866,7 @@ LaTeX Font Info:    Font shape `OT1/EBGaramond-OsF/m/n' will be
 (Font)              scaled to size 6.0pt on input line 31.
  [1
 
-{C:/Users/trish/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/trish/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/ebgaramond/ebg_qn2lct.enc}{C:/Users/trish/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/ebgaramond/ebg_ne3tkd.enc}] (HW3.aux)
+{C:/Users/trish/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/trish/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/ebgaramond/ebg_qn2lct.enc}{C:/Users/trish/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/ebgaramond/ebg_ne3tkd.enc}] [2] (HW3.aux)
  ***********
 LaTeX2e <2023-11-01>
 L3 programming layer <2023-12-11>
@@ -886,17 +875,17 @@ Package rerunfilecheck Info: File `HW3.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 32247 strings out of 474495
- 649680 string characters out of 5743935
- 1946460 words of memory out of 5000000
- 53938 multiletter control sequences out of 15000+600000
+ 32070 strings out of 474495
+ 647191 string characters out of 5743935
+ 1949460 words of memory out of 5000000
+ 53764 multiletter control sequences out of 15000+600000
  576346 words of font info for 79 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 116i,6n,121p,1291b,469s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 116i,6n,121p,1291b,466s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/trish/AppData/Local/Programs/MiKTeX/fonts/type1/public/ebgaramond/EBGaramond-Bold.pfb><C:/Users/trish/AppData/Local/Programs/MiKTeX/fonts/type1/public/ebgaramond/EBGaramond-BoldItalic.pfb><C:/Users/trish/AppData/Local/Programs/MiKTeX/fonts/type1/public/ebgaramond/EBGaramond-Italic.pfb><C:/Users/trish/AppData/Local/Programs/MiKTeX/fonts/type1/public/ebgaramond/EBGaramond-Regular.pfb><C:/Users/trish/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/trish/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/trish/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/trish/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/trish/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/trish/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/trish/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Users/trish/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on HW3.pdf (1 page, 159865 bytes).
+Output written on HW3.pdf (2 pages, 165379 bytes).
 PDF statistics:
- 115 PDF objects out of 1000 (max. 8388607)
- 5 named destinations out of 1000 (max. 500000)
+ 119 PDF objects out of 1000 (max. 8388607)
+ 6 named destinations out of 1000 (max. 500000)
  157 words of extra memory for PDF output out of 10000 (max. 10000000)
 

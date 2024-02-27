@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1709052724 "c:/Users/trish/Downloads/Sem-6/AG-HW/Workspace/HW3.tex" "HW3.pdf" "HW3" 1709052726 0
+["pdflatex"] 1709055013 "c:/Users/trish/Downloads/Sem-6/AG-HW/Workspace/HW3.tex" "HW3.pdf" "HW3" 1709055015 0
   "C:/Users/trish/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1708964485 287127 bd7ca93361d12ec9974b3f26f21427b5 ""
   "C:/Users/trish/AppData/Local/MiKTeX/fonts/tfm/public/rsfs/rsfs10.tfm" 1661309732 688 37338d6ab346c2f1466b29e195316aa4 ""
   "C:/Users/trish/AppData/Local/MiKTeX/fonts/tfm/public/rsfs/rsfs5.tfm" 1661309735 684 3a51bd4fd9600428d5264cf25f04bb9a ""
@@ -146,7 +146,6 @@
   "C:/Users/trish/AppData/Local/Programs/MiKTeX/tex/latex/epstopdf-pkg/epstopdf-base.sty" 1623003186 13886 d1306dcf79a944f6988e688c1785f9ce ""
   "C:/Users/trish/AppData/Local/Programs/MiKTeX/tex/latex/eso-pic/eso-pic.sty" 1683737457 11876 6ef493863ae0d7a984706973240c2237 ""
   "C:/Users/trish/AppData/Local/Programs/MiKTeX/tex/latex/etoolbox/etoolbox.sty" 1601897756 46845 3b58f70c6e861a13d927bff09d35ecbc ""
-  "C:/Users/trish/AppData/Local/Programs/MiKTeX/tex/latex/fancyhdr/fancyhdr.sty" 1668504483 18450 88279bf67c81e69f8e3f1c1bad1a26c5 ""
   "C:/Users/trish/AppData/Local/Programs/MiKTeX/tex/latex/fontaxes/fontaxes.sty" 1595859599 14699 41fdb35c51be792ddf00696848d0cfef ""
   "C:/Users/trish/AppData/Local/Programs/MiKTeX/tex/latex/geometry/geometry.cfg" 1578053545 1104 7ac475a4e3466b0b43e138e9356bda83 ""
   "C:/Users/trish/AppData/Local/Programs/MiKTeX/tex/latex/geometry/geometry.sty" 1578053545 42759 9cf6c5257b1bc7af01a58859749dd37a ""
@@ -232,11 +231,11 @@
   "C:/Users/trish/AppData/Local/Programs/MiKTeX/tex/latex/wrapfig/wrapfig.sty" 1044403200 26220 3701aebf80ccdef248c0c20dd062fea9 ""
   "C:/Users/trish/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1700127522 55487 80a65caedd3722f4c20a14a69e785d8f ""
   "C:/Users/trish/AppData/Local/Programs/MiKTeX/tex/latex/xkeyval/xkeyval.sty" 1656236919 4937 4ce600ce9bd4ec84d0250eb6892fcf4f ""
-  "HW3.aux" 1709052726 162 55205a9e8a8eca30d36afb389b0617bf "pdflatex"
-  "HW3.out" 1709052726 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "HW3.tex" 1709052723 3467 2866c44e44530904d97f08843d8a76f7 ""
-  "c:/Users/trish/Downloads/Sem-6/AG-HW/Workspace/HW3.tex" 1709052723 3467 2866c44e44530904d97f08843d8a76f7 ""
-  "trishan2.sty" 1709023233 6429 177ccc2e08c2ab63e454c018dd538a29 ""
+  "HW3.aux" 1709055014 162 87159b23cce7c2b923b11c85495bbd6d "pdflatex"
+  "HW3.out" 1709055014 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "HW3.tex" 1709055012 4510 062d4ecc6fa59afd276d3e4f760ca0db ""
+  "c:/Users/trish/Downloads/Sem-6/AG-HW/Workspace/HW3.tex" 1709055012 4510 062d4ecc6fa59afd276d3e4f760ca0db ""
+  "trishan2.sty" 1709054636 6259 0b1e4fccf26dcb4a8df1b7ec574885b3 ""
   (generated)
   "HW3.aux"
   "HW3.log"

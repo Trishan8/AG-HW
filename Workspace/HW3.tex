@@ -31,13 +31,16 @@
 $$\Gamma(\varphi)\simeq \text{Rational curve in }\Pn^3$$
 
 \begin{prob} %trishan 3
-    (UAG 5.13) Study the embedding $\varphi : \Pn^2 \to \Pn^5$ given by $[x:y:z] \mapsto [x^2:xy:yz:y^2:yz:z^2]$ and prove that $\varphi$ is an isomorphism. Prove that the lines of $\Pn^2$ go over the conics of $\Pn^5$ and the conics go over the twisted quartics of $\Pn^5$.
+    (UAG 5.13) Study the embedding $\varphi : \Pn^2 \to \Pn^5$ given by $[x:y:z] \mapsto [x^2:xy:xz:y^2:yz:z^2]$ and prove that $\varphi$ is an isomorphism. Prove that the lines of $\Pn^2$ go over the conics of $\Pn^5$ and the conics go over the twisted quartics of $\Pn^5$.
 
     \vspace*{0.2cm}
 
     \noindent For any line $\ell \subset \Pn^2$, write $\pi(\ell) \subseteq \Pn^5$ for the projective plane spanned by the conics $\varphi(\ell)$. Prove that union of $\pi(\ell)$ taken over all $\ell \Pn^2$ is a cubic hypersurface $\Sigma \subseteq \Pn^5$.
 \end{prob}
 
-\sol. 
-
+\sol. Consider the following vanishing set on $\Pn^5$, $$S = V(t_0t_3-t_1^2, t_3t_5-t_4^2,t_0t_5-t_2^2,t_1t_2-t_0t_4,t_1t_4-t_3t_2,t_2t_4-t_5t_1)$$
+It's not hard to see $\im \varphi \subset S$. Now note that the map $\varphi$ gives us a surjective map between the following vector spaces, \[
+ \qty{\text{homogeneous quadratic polynomials in }t_0,\cdots,t_5} \to  \qty{\text{homogeneous quartics in } x,y,z}    
+\] 
+The first V.S is of dimension $21$ and the later one has dimension $15$. Thus the kernal has dimension $6$. Now note that the polynomials defining $S$ are linearly independent. So, $\im \varphi = S$. Thus the image of $\varphi$ is given by the variety $S$. Now take the map $\psi : S \to \Pn^3$ that maps $[t_0:\cdots:t_5] \to [t_0:t_1:t_2]$ works as the inverse map of $\varphi$ (it is defined except for $[0:0:0:0:0:1]$). So, $\varphi$ is an isomorphism. Any line in $\Pn^2$ can be given by the set $\qty{[x:y:ax+by]}$, image of this in $S$ is intersection of conics which will be again a conic (it can be degenerate).
 \end{document}
