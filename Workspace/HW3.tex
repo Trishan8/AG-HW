@@ -20,9 +20,16 @@
 \noindent Any morphisms  $\mathbb{P}^1 \to \A^m$ can be given by $(f_1,\cdots,f_m)$ where $f_i$ are regular on $\mathbb{P}^1$. Thus the function $f$ is constant by the previous part. \Qed
 
 \begin{prob} %trishan 2
-    (UAG 5.7) Let $\varphi : \mathbb{P}^1 \to \mathbb{P}^1$ be an isomorphism; identify $\varphi$ as subvariety of $\mathbb{P}^1 \times \mathbb{P}^1\subset \mathbb{P}^3$. Now do the same if $\varphi : \Pn^1 \to \Pn^1$ is given by map $(X,Y)\mapsto (X^2,Y^2)$.
+    (UAG 5.7) Let $\varphi : \mathbb{P}^1 \to \mathbb{P}^1$ be an isomorphism; identify graph of $\varphi$ as subvariety of $\mathbb{P}^1 \times \mathbb{P}^1\subset \mathbb{P}^3$. Now do the same if $\varphi : \Pn^1 \to \Pn^1$ is given by map $(X,Y)\mapsto (X^2,Y^2)$.
 \end{prob} 
 
-\sol.  
- 
+\sol. Consider the identity map $\id : \Pn^1 \to \Pn^1$ and the given isomorphism, it will give us a map $\id \times \varphi :\Pn^1 \times \Pn^1 \to \Pn^1\times \Pn^1$ by $(x,y)\mapsto (x,\varphi(x))$. Under the identification of $\Pn^1 \times \Pn^1 = \Pn^3$ we can say, $\id \times \varphi$ is also a morphism of variety. In the variety $\Pn^1 \times \Pn^1$, the diagonal $\D = \qty{(x,x): x \in \Pn^1}$ is closed (simply because it is given by the vanishing of $x_0-x_2$ and $x_1-x_3$ where $[x_0:x_1]$ and $[x_2:x_3]$ are co-ordinates of two copies of $\Pn^1$). It's not hard to see the graph of $\varphi$ is given by the inverse image of $\D$ under $\id \times \varphi$. $$\Gamma(\varphi)= (\id \times \varphi)^{- 1}(\D)$$ Since the graph is closed it's inverse image will also be closed. Thus the graph is a closed set and under zariski topology any closed set is given by vanishing of some set of polynomials. This will help us to identify $\Gamma(\varphi)$ as a subvariety of $\Pn^1\times \Pn^1$. If $\varphi$ is given by $[x:y]\to [f(x,y):g(x,y)]$ then the graph can be given by the image of following vanishing set under segre embedding $$\qty{[x_0:x_1:x_2:x_3]: x_2 =f(x_0,x_1), x_3=g(x_0,x_1)}$$ 
+
+\vspace*{0.2cm}
+
+\noindent If, $\varphi$ given by $[x,y]\mapsto [x^2:y^2]$ the image of $([x:y],[x^2,y^2])$ is $[x^3:xy^2:yx^2:y^3]$(image under segre embedding). Which is rational curve $\Pn^1 \to \Pn^3$, a sub-variety of $\Pn^3$.
+$$\Gamma(\varphi)\simeq \text{Rational curve in }\Pn^3$$
+
+
+
 \end{document}
