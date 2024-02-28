@@ -6,12 +6,12 @@
 \date{}
 
 \begin{document}
- \maketitle
- \setcounter{section}{3}
+\maketitle
+\setcounter{section}{3}
 
- \begin{prob} %trishan 1
-  (UAG 5.1) A rgular function on $\mathbb{P}^1$ is constant. Deduce that there are no non-constant morphisms $\mathbb{P}^1 \to \A^m$ for $m \geq 1$.
- \end{prob}
+\begin{prob} %trishan 1
+    (UAG 5.1) A rgular function on $\mathbb{P}^1$ is constant. Deduce that there are no non-constant morphisms $\mathbb{P}^1 \to \A^m$ for $m \geq 1$.
+\end{prob}
 
 \sol. Suppose  $f \in k(\mathbb{P}^1)$ be a rational function, which is regular everywhere. If we restrict it to the affine piece $\A_{(0)}$, we get $f(x,1) = p(x) \in k[x]$ (as for the case of affine variety $\operatorname{dom} f = V$ iff $f \in k[V]$). Similarly, we can restrict $f$ to another affine piece $\A_{\infty}$. We get, $f(1,y) = f(1/y,1) = p(1/y) \in k[y]$. It is possible iff $p$ is constant.
 
@@ -19,16 +19,133 @@
 
 \noindent Any morphisms  $\mathbb{P}^1 \to \A^m$ can be given by $(f_1,\cdots,f_m)$ where $f_i$ are regular on $\mathbb{P}^1$. Thus the function $f$ is constant by the previous part. \Qed
 
+\begin{prob}
+    Problem 5.3
+\end{prob}
+
+\sol.
+\begin{enumerate}[label = (\alph*)]
+    \item The given map is a rational map. This is because it is well-defined for all \( [x,y,z] \in \mathbbm{P}^2 \setminus \qty{[0,0,1]} \) and is a rational function in each coordinate of the image. We therefore have
+          \[
+              \operatorname{dom} \varphi =[x,y,z] \in \mathbbm{P}^2 \setminus \qty{[0,0,1]}.
+          \]
+          Further, this is a birational map, as it has the rational inverse given by the map in (c), \( [x,y] \mapsto [x,y,0] \).
+          \smallskip
+    \item The given map is not a rational map. This is because
+          \[
+              \varphi([1,0]) = [1,0,1] \neq [2,0,1] = \varphi([2,0]),
+          \]
+          but \( [1,0] \neq [2,0] \).
+          \smallskip
+
+    \item The given map is a rational map. This is because it is well-defined for all \( [z,y] \in \mathbbm{P}^1 \) and is a rational function in each coordinate of the image. We therefore have
+          \[
+              \operatorname{dom} \varphi = \mathbbm{P}^1.
+          \]
+          Further, this is a birational map, as it has the rational inverse given by the map in (a), \( [x,y,z] \mapsto [x,y] \).
+          \smallskip
+
+    \item The given map is a rational map. This is because it is well-defined for all \( [x,y,z] \in \mathbbm{P}^2 \) with \( xyz \neq 0 \), and is a rational function in each coordinate of the image. We therefore have,
+          \[
+              \operatorname{dom}  \varphi = \qty{[x,y,z] \mid xyz \neq 0}.
+          \]
+          Further, \( \varphi^2 \) is the identity map on \( \operatorname{dom} \varphi \), and so it is a birational map.
+          \smallskip
+
+    \item The given map is a rational map. This is because it is well-defined for all \( [x,y,z] \in \mathbbm{P}^2 \) with \( z \neq 0 \), and is a rational function in each coordinate of the image. We therefore have,
+          \[
+              \operatorname{dom} \varphi = \qty{[x,y,z] \mid z \neq 0}.
+          \]
+          The map is not birational as the function fields of the domain and image are not isomorphic.
+          \smallskip
+
+    \item The given map is a rational map. This is because it is well-defined for all \( [x,y,z] \in \mathbbm{P}^2 \) with one of \( x,y \) non-zero, and is a rational function in each coordinate of the image. We therefore have,
+          \[
+              \operatorname{dom} \varphi = \mathbbm{P}^2 \setminus \qty{[0,0,1]}.
+          \]
+          The map is not birational as there is no rational inverse.
+\end{enumerate}
+
+\begin{prob}
+    Problem 5.6
+\end{prob}
+\sol. \begin{enumerate}[label = (\alph*)]
+    \item The affine pieces are:
+          \begin{enumerate}[label = (\roman*)]
+              \item \( (x=1): y^2z = 1+az^2+bz^3 \)
+              \item \( (y=1): z = x^3+axz^2+bz^3 \)
+              \item \( (z=1): y^2=x^3+ax+b \)
+          \end{enumerate}
+
+          The intersections with the coordinate axes are:
+          \begin{enumerate}[label = (\roman*)]
+              \item \( (x=0): z(y^2-bz^2)=0 \)
+              \item \( (y=0): x^3+axz^2+bz^3 = 0 \)
+              \item \( (z=0): x^3=0 \)
+          \end{enumerate}
+          \smallskip
+
+    \item The affine pieces are:
+          \begin{enumerate}[label = (\roman*)]
+              \item \( (x=1): (y-z)^2-2yz(y+z)=0 \)
+              \item \( (y=1): (z-x)^2-2zx(z+x)=0 \)
+              \item \( (z=1): (x-y)^2-2xy(x+y)=0 \)
+          \end{enumerate}
+          The intersections with the coordinate axes are:
+          \begin{enumerate}[label = (\roman*)]
+              \item \( (x=0): y^2z^2=0 \)
+              \item \( (y=0): z^2x^2=0 \)
+              \item \( (z=0): x^2y^2 = 0 \)
+          \end{enumerate}
+          \smallskip
+
+    \item The affine pieces are:
+          \begin{enumerate}[label = (\roman*)]
+              \item \( (x=1): z^3=(1+z^2)y^2 \)
+              \item \( (y=1): xz^3=x^2+z^2 \)
+              \item \( (z=1): x=(x^2+1)y^2 \)
+          \end{enumerate}
+          The intersections with the coordinate axes are:
+          \begin{enumerate}[label = (\roman*)]
+              \item \( (x=0): z^2y^2=0 \)
+              \item \( (y=0): xz^3=0 \)
+              \item \( (z=0): x^2y^2=0 \)
+          \end{enumerate}
+\end{enumerate}
+
 \begin{prob} %trishan 2
     (UAG 5.7) Let $\varphi : \mathbb{P}^1 \to \mathbb{P}^1$ be an isomorphism; identify graph of $\varphi$ as subvariety of $\mathbb{P}^1 \times \mathbb{P}^1\subset \mathbb{P}^3$. Now do the same if $\varphi : \Pn^1 \to \Pn^1$ is given by map $(X,Y)\mapsto (X^2,Y^2)$.
-\end{prob} 
+\end{prob}
 
-\sol. Consider the identity map $\id : \Pn^1 \to \Pn^1$ and the given isomorphism, it will give us a map $\id \times \varphi :\Pn^1 \times \Pn^1 \to \Pn^1\times \Pn^1$ by $(x,y)\mapsto (x,\varphi(x))$. Under the identification of $\Pn^1 \times \Pn^1 = \Pn^3$ we can say, $\id \times \varphi$ is also a morphism of variety. In the variety $\Pn^1 \times \Pn^1$, the diagonal $\D = \qty{(x,x): x \in \Pn^1}$ is closed (simply because it is given by the vanishing of $x_0-x_2$ and $x_1-x_3$ where $[x_0:x_1]$ and $[x_2:x_3]$ are co-ordinates of two copies of $\Pn^1$). It's not hard to see the graph of $\varphi$ is given by the inverse image of $\D$ under $\id \times \varphi$. $$\Gamma(\varphi)= (\id \times \varphi)^{- 1}(\D)$$ Since the graph is closed it's inverse image will also be closed. Thus the graph is a closed set and under zariski topology any closed set is given by vanishing of some set of polynomials. This will help us to identify $\Gamma(\varphi)$ as a subvariety of $\Pn^1\times \Pn^1$. If $\varphi$ is given by $[x:y]\to [f(x,y):g(x,y)]$ then the graph can be given by the image of following vanishing set under segre embedding $$\qty{[x_0:x_1:x_2:x_3]: x_2 =f(x_0,x_1), x_3=g(x_0,x_1)}$$ 
+\sol. Consider the identity map $\id : \Pn^1 \to \Pn^1$ and the given isomorphism, it will give us a map $\id \times \varphi :\Pn^1 \times \Pn^1 \to \Pn^1\times \Pn^1$ by $(x,y)\mapsto (x,\varphi(x))$. Under the identification of $\Pn^1 \times \Pn^1 = \Pn^3$ we can say, $\id \times \varphi$ is also a morphism of variety. In the variety $\Pn^1 \times \Pn^1$, the diagonal $\D = \qty{(x,x): x \in \Pn^1}$ is closed (simply because it is given by the vanishing of $x_0-x_2$ and $x_1-x_3$ where $[x_0:x_1]$ and $[x_2:x_3]$ are co-ordinates of two copies of $\Pn^1$). It's not hard to see the graph of $\varphi$ is given by the inverse image of $\D$ under $\id \times \varphi$. $$\Gamma(\varphi)= (\id \times \varphi)^{- 1}(\D)$$ Since the graph is closed it's inverse image will also be closed. Thus the graph is a closed set and under zariski topology any closed set is given by vanishing of some set of polynomials. This will help us to identify $\Gamma(\varphi)$ as a subvariety of $\Pn^1\times \Pn^1$. If $\varphi$ is given by $[x:y]\to [f(x,y):g(x,y)]$ then the graph can be given by the image of following vanishing set under segre embedding $$\qty{[x_0:x_1:x_2:x_3]: x_2 =f(x_0,x_1), x_3=g(x_0,x_1)}$$
 
 \vspace*{0.2cm}
 
 \noindent If, $\varphi$ given by $[x,y]\mapsto [x^2:y^2]$ the image of $([x:y],[x^2,y^2])$ is $[x^3:xy^2:yx^2:y^3]$(image under segre embedding). Which is rational curve $\Pn^1 \to \Pn^3$, a sub-variety of $\Pn^3$.
 $$\Gamma(\varphi)\simeq \text{Rational curve in }\Pn^3$$
+
+\begin{prob}
+    Problem 5.12
+\end{prob}
+
+\sol. The given curve is \( C: (Y^2Z = X^3 + aXZ^2 + bZ^3) \subset \mathbbm{P}^2 \). The affine pieces are
+\[
+    C_{(0)}: y^2 = x^3+ax+b, \quad C_{(\infty)}: z' = x'^3+ax'z'^2+bz'^3
+\]
+
+Let \( f \) be a regular function on \( C \). Then, \( \operatorname{dom} f \supset C_{(0)} \), and so, \( f \in k[C_{(0)}] = k[x,y]/(y^2-x^3-ax-b) \). Hence, there is \( q,r \in k[x] \) such that \( f(x,y) \equiv q(x) + y r(x) \) in \( k[C_{(0)}] \). Now, as \( \operatorname{dom} f \supset C_{(\infty)} \), we get that
+\[
+    q \qty(\frac{x'}{z'}) + \frac{1}{z'}r\qty(\frac{x'}{z'}) \equiv p(x',z'),
+\]
+for some polynomial \( p \). Therefore, we can multiply out the denominators to get an expression
+\[
+    \widetilde{q}(x',z') + \widetilde{r}(x',z') = p(x',z')z'^m + A(x',z')g,
+\]
+in \( k[x',z'] \), where \( \widetilde{q} \) is homogeneous of degree \( m \), \( \widetilde{r} \) is homogeneous of degree \( m-1 \), \( g = x'^3+ax'z'^2+bz'^3-z' \). We now write \( p = p_1+p_2 \) and \( A = A_1+A_2 \), where \( p_1,A_1 \) consist of the odd degree terms and \( p_2,A_2 \) consist of the even degree terms. Then, assuming \( m \) is odd, we get
+\[
+    \widetilde{q} = p_2z'^m + A_1g, \quad \widetilde{r} = p_1z_1^m + A_2g.
+\]
+A similar expression holds in case \( m \) is even, by switching \( p_1 \) with \( p_2 \) and \( A_1 \) with \( A_2 \). Now, \( \widetilde{q} \) is homogeneous of degree \( m \), and hence, \( A_1g \) must have degree at least \( m \). Therefore, we get (as \( g \) has the term \( z' \)) that \( z' \mid \widetilde{q}\). Similarly, \( z' \mid \widetilde{r} \). Hence, we can divide the entire expression by \( z' \), and get \( \widetilde{q} \) homogeneous of degree \( m-1 \) and \( \widetilde{r} \) homogeneous of degree \( m-2 \). Hence, assuming that \( m \) is the least possible we get \( m=0 \), and so, \( f \equiv c \) for some constant \( c \). This shows that \( f \) must in fact be constant, as was required. \(\hfill \blacksquare\)
 
 \begin{prob} %trishan 3
     (UAG 5.13) Study the embedding $\varphi : \Pn^2 \to \Pn^5$ given by $[x:y:z] \mapsto [x^2:xy:xz:y^2:yz:z^2]$ and prove that $\varphi$ is an isomorphism. Prove that the lines of $\Pn^2$ go over the conics of $\Pn^5$ and the conics go over the twisted quartics of $\Pn^5$.
@@ -40,20 +157,20 @@ $$\Gamma(\varphi)\simeq \text{Rational curve in }\Pn^3$$
 
 \sol. Consider the following vanishing set on $\Pn^5$, $$S = V(t_0t_3-t_1^2, t_3t_5-t_4^2,t_0t_5-t_2^2,t_1t_2-t_0t_4,t_1t_4-t_3t_2,t_2t_4-t_5t_1)$$
 It's not hard to see $\im \varphi \subset S$. Now note that the map $\varphi$ gives us a surjective map between the following vector spaces, \[
- \qty{\text{homogeneous quadratic polynomials in }t_0,\cdots,t_5} \to  \qty{\text{homogeneous quartics in } x,y,z}    
-\] 
-The first V.S is of dimension $21$ and the later one has dimension $15$. Thus the kernal has dimension $6$. Now note that the polynomials defining $S$ are linearly independent. So, $\im \varphi = S$. Thus the image of $\varphi$ is given by the variety $S$. Now take the map $\psi : S \to \Pn^3$ that maps $[t_0:\cdots:t_5] \to [t_0:t_1:t_2]$ works as the inverse map of $\varphi$ (it is defined except for $[0:0:0:0:0:1]$). So, $\varphi$ is an isomorphism. Any line in $\Pn^2$ can be given by the set $\qty{[x:y:ax+by]}$, image of this in $S$ is intersection of conics which will be again a conic (it can be degenerate). Any conic in $\Pn^2$ can be re-parametrized so that it is given by $[u^2:uv:v^2]$. It's image in $S$ is twisted quardics. 
+    \qty{\text{homogeneous quadratic polynomials in }t_0,\cdots,t_5} \to  \qty{\text{homogeneous quartics in } x,y,z}
+\]
+The first V.S is of dimension $21$ and the later one has dimension $15$. Thus the kernal has dimension $6$. Now note that the polynomials defining $S$ are linearly independent. So, $\im \varphi = S$. Thus the image of $\varphi$ is given by the variety $S$. Now take the map $\psi : S \to \Pn^3$ that maps $[t_0:\cdots:t_5] \to [t_0:t_1:t_2]$ works as the inverse map of $\varphi$ (it is defined except for $[0:0:0:0:0:1]$). So, $\varphi$ is an isomorphism. Any line in $\Pn^2$ can be given by the set $\qty{[x:y:ax+by]}$, image of this in $S$ is intersection of conics which will be again a conic (it can be degenerate). Any conic in $\Pn^2$ can be re-parametrized so that it is given by $[u^2:uv:v^2]$. It's image in $S$ is twisted quardics.
 
 \vspace*{0.2cm}
 
 \noindent To do the last part we can also identify $S$ as the following set,\[S = \qty{ [t_0:t_1:\cdots:t_5] \in \Pn^5:\operatorname{rank }\begin{pmatrix}
-    t_0 & t_1 & t_2 \\
-    t_1 & t_3 & t_4 \\
-    t_2 & t_4 & t_5
-\end{pmatrix} \leq 1}\] From the above identification of $S$ we can say, $\cup_{\ell \subset \Pn^2}\pi(\ell)$ is given by $\det \begin{pmatrix}
-    t_0 & t_1 & t_2 \\
-    t_1 & t_3 & t_4 \\
-    t_2 & t_4 & t_5
-\end{pmatrix}=0$. This clearly determines a hyper-surface in $\Pn^5$. $\hfill \blacksquare$
+            t_0 & t_1 & t_2 \\
+            t_1 & t_3 & t_4 \\
+            t_2 & t_4 & t_5
+        \end{pmatrix} \leq 1}\] From the above identification of $S$ we can say, $\cup_{\ell \subset \Pn^2}\pi(\ell)$ is given by $\det \begin{pmatrix}
+        t_0 & t_1 & t_2 \\
+        t_1 & t_3 & t_4 \\
+        t_2 & t_4 & t_5
+    \end{pmatrix}=0$. This clearly determines a hyper-surface in $\Pn^5$. $\hfill \blacksquare$
 
 \end{document}
