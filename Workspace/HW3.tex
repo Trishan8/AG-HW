@@ -262,8 +262,18 @@ A similar expression holds in case \( m \) is even, by switching \( p_1 \) with 
 It's not hard to see $\im \varphi \subset S$. Now note that the map $\varphi$ gives us a surjective map between the following vector spaces, \[
     \qty{\text{homogeneous quadratic polynomials in }t_0,\cdots,t_5} \to  \qty{\text{homogeneous quartics in } x,y,z}
 \]
-The first V.S is of dimension $21$ and the later one has dimension $15$. Thus the kernal has dimension $6$. Now note that the polynomials defining $S$ are linearly independent. So, $\im \varphi = S$. Thus the image of $\varphi$ is given by the variety $S$. Now take the map $\psi : S \to \Pn^3$ that maps $[t_0:\cdots:t_5] \to [t_0:t_1:t_2]$ works as the inverse map of $\varphi$ (it is defined except for $[0:0:0:0:0:1]$). So, $\varphi$ is an isomorphism. Any line in $\Pn^2$ can be given by the set $\qty{[x:y:ax+by]}$, image of this in $S$ is intersection of conics which will be again a conic (it can be degenerate). Any conic in $\Pn^2$ can be re-parametrized so that it is given by $[u^2:uv:v^2]$. It's image in $S$ is twisted quardics.
-
+The first V.S is of dimension $21$ and the later one has dimension $15$. Thus the kernal has dimension $6$. Now note that the polynomials defining $S$ are linearly independent. So, $\im \varphi = S$. Thus the image of $\varphi$ is given by the variety $S$. Now take the map $\psi : S \to \Pn^3$ that maps $[t_0:\cdots:t_5] \to [t_0:t_1:t_2]$ works as the inverse map of $\varphi$ (it is defined except for $[0:0:0:0:0:1]$). So, $\varphi$ is an isomorphism.  Any line in $\Pn^2$ can be given by the set $\qty{[X:Y:AX+BY]}$, the image of that under $\varphi$ is $(X^2, XY, AX^2+BXY, Y^2, AXY + BY^2, A^2X^2 + 2AXBY + B^2Y^2)$. Note that the projective transformation given by
+\[
+  \begin{bmatrix}
+    1 & 0 & 0 & 0 & 0 & 0 \\
+    0 & 1 & 0 & 0 & 0 & 0 \\
+    -A & -B & 1 & 0 & 0 & 0 \\
+    0 & 0 & 0 & 1 & 0 & 0 \\
+    0 & A & 0 & -B & 1 & 0 \\
+    -A^2 & -2AB & 0 & -B^2 & 0 & 1 \\
+  \end{bmatrix}
+\]
+is valid since its determinant is 1 (easily computed using the fact that it is a lower triangular matrix). Any conic in $\Pn^2$ can be re-parametrized so that it is given by $[u^2:uv:v^2]$. It's image in $S$ is twisted quardics.
 \vspace*{0.2cm}
 
 \noindent To do the last part we can also identify $S$ as the following set,\[S = \qty{ [t_0:t_1:\cdots:t_5] \in \Pn^5:\operatorname{rank }\begin{pmatrix}
