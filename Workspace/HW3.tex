@@ -21,64 +21,64 @@
 
 % problem 5.2 (complete)
 \begin{prob}
-    (\textit{The quadric surface in $\mathbb{P}^3$}). 
+    (\textit{The quadric surface in $\mathbb{P}^3$}).
     \begin{enumerate}
-        \item[(i)] Show that the Segre embedding of $\mathbb{P}^1 \times \mathbb{P}^1$ gives an isomorphism of $\mathbb{P}^1 \times \mathbb{P}^1$ with the quadric 
-        \begin{align*}
-            S_{1,1} = Q : (X_0X_3 = X_1X_2) \subseteq \mathbb{P}^3.
-        \end{align*}
+        \item[(i)] Show that the Segre embedding of $\mathbb{P}^1 \times \mathbb{P}^1$ gives an isomorphism of $\mathbb{P}^1 \times \mathbb{P}^1$ with the quadric
+            \begin{align*}
+                S_{1,1} = Q : (X_0X_3 = X_1X_2) \subseteq \mathbb{P}^3.
+            \end{align*}
         \item[(ii)] What are the images in $Q$ of the two families of lines $\{p\} \times \mathbb{P}^1$ and $\mathbb{P}^1 \times \{p\}$ in $\mathbb{P}^1 \times \mathbb{P}^1$? Use this to find some disjoint lines in $\mathbb{P}^1 \times \mathbb{P}^1$, and conclude from this that $\mathbb{P}^1 \times \mathbb{P}^1 \not\cong \mathbb{P}^2$.
-        \item[(iii)] Show that there are two lines of $Q$ passing through the point $P = (1,0,0,0)$ and that the complement $U$ of these two lines is the image of $\mathbb{A}^1 \times \mathbb{A}^1$ under the Segree embedding. 
-        \item[(iv)] Show that under the projection $\pi\vert_{Q} : Q \dashrightarrow \mathbb{P}^2$, $U$ maps isomorphically to a copy of $\mathbb{A}^2$, and the two lines through $P$ are mapped to two points of $\mathbb{P}^2$. 
+        \item[(iii)] Show that there are two lines of $Q$ passing through the point $P = (1,0,0,0)$ and that the complement $U$ of these two lines is the image of $\mathbb{A}^1 \times \mathbb{A}^1$ under the Segree embedding.
+        \item[(iv)] Show that under the projection $\pi\vert_{Q} : Q \dashrightarrow \mathbb{P}^2$, $U$ maps isomorphically to a copy of $\mathbb{A}^2$, and the two lines through $P$ are mapped to two points of $\mathbb{P}^2$.
         \item[(v)] Find $\mathrm{dom} \pi$ and $\mathrm{dom} \varphi$, and give a geometric interpretation of the singularities of $\pi$ and $\varphi$.
     \end{enumerate}
-    \end{prob}
-    
-    \sol.
-    \begin{enumerate}
-        \item[(i)] Let $\varphi : \mathbb{P}^1 \times \mathbb{P}^1 \to \mathbb{P}^3$, $([X_0,X_1],[Y_0,Y_1]) \mapsto [X_0Y_0, X_0Y_1, X_1Y_0, X_1Y_1]$ be the Segree embedding. Then we clearly have $\im \varphi = S_{1,1} \subseteq Q$. Since we know that the Segree embedding $S_{1,1} \cong \mathbb{P}^1 \times \mathbb{P}^1$. Its enough to show that $Q \subseteq S_{1,1}$. Note that 
+\end{prob}
+
+\sol.
+\begin{enumerate}
+    \item[(i)] Let $\varphi : \mathbb{P}^1 \times \mathbb{P}^1 \to \mathbb{P}^3$, $([X_0,X_1],[Y_0,Y_1]) \mapsto [X_0Y_0, X_0Y_1, X_1Y_0, X_1Y_1]$ be the Segree embedding. Then we clearly have $\im \varphi = S_{1,1} \subseteq Q$. Since we know that the Segree embedding $S_{1,1} \cong \mathbb{P}^1 \times \mathbb{P}^1$. Its enough to show that $Q \subseteq S_{1,1}$. Note that
         \begin{align*}
-            Q &= \{ [X_0,X_1,X_2,X_3] \in \mathbb{P}^3 \mid X_0X_3 - X_1X_2 = 0 \} \\
-            &= \left\{ [X_0,X_1,X_2,X_3] \in \mathbb{P}^3 \mid \det\begin{pmatrix} X_0 & X_1 \\ X_2 & X_3 \end{pmatrix} = 0\right\} \\ 
-            &= \left\{ [X_0,X_1,X_2,X_3] \in \mathbb{P}^3 \mid \mathrm{rk}\begin{pmatrix} X_0 & X_1 \\ X_2 & X_3 \end{pmatrix} = 1 \right\},
+            Q & = \{ [X_0,X_1,X_2,X_3] \in \mathbb{P}^3 \mid X_0X_3 - X_1X_2 = 0 \}                                                             \\
+              & = \left\{ [X_0,X_1,X_2,X_3] \in \mathbb{P}^3 \mid \det\begin{pmatrix} X_0 & X_1 \\ X_2 & X_3 \end{pmatrix} = 0\right\}          \\
+              & = \left\{ [X_0,X_1,X_2,X_3] \in \mathbb{P}^3 \mid \mathrm{rk}\begin{pmatrix} X_0 & X_1 \\ X_2 & X_3 \end{pmatrix} = 1 \right\},
         \end{align*}
-        the rank can not be zero, as at least one of the entries $X_0, X_1, X_2, X_3$ is nonzero. Let $[X_0,X_1,X_2,X_3] \in Q$, and WLOG assume $X_0 \neq 0$, then we get there exists $\lambda, \mu \neq 0$ such that 
+        the rank can not be zero, as at least one of the entries $X_0, X_1, X_2, X_3$ is nonzero. Let $[X_0,X_1,X_2,X_3] \in Q$, and WLOG assume $X_0 \neq 0$, then we get there exists $\lambda, \mu \neq 0$ such that
         \begin{align*}
             \begin{pmatrix}
                 X_0 \\ X_2
             \end{pmatrix} = \lambda \begin{pmatrix}
-                X_1 \\ X_3
-            \end{pmatrix}  \quad \mbox{ and } \quad \begin{pmatrix}
-                X_0 \\ X_1
-            \end{pmatrix} = \mu \begin{pmatrix}
-                X_2 \\ X_3
-            \end{pmatrix}
-        \end{align*} 
-        Thus we get that $X_1 = \frac{X_0}{\lambda}$, $X_2 = \frac{X_0}{\mu}$ and $X_3 = \frac{X_2}{\lambda} = \frac{X_0}{\mu\lambda}$, thus we get that 
+                                        X_1 \\ X_3
+                                    \end{pmatrix}  \quad \mbox{ and } \quad \begin{pmatrix}
+                                                                                X_0 \\ X_1
+                                                                            \end{pmatrix} = \mu \begin{pmatrix}
+                                                                                                    X_2 \\ X_3
+                                                                                                \end{pmatrix}
+        \end{align*}
+        Thus we get that $X_1 = \frac{X_0}{\lambda}$, $X_2 = \frac{X_0}{\mu}$ and $X_3 = \frac{X_2}{\lambda} = \frac{X_0}{\mu\lambda}$, thus we get that
         \begin{align*}
             [X_0,X_1,X_2,X_3] = \left[ X_0, \frac{X_0}{\lambda}, \frac{X_0}{\mu}, \frac{X_0}{\mu\lambda} \right] = [\mu\lambda,\mu,\lambda,1] = \varphi([\mu,1],[\lambda,1]).
         \end{align*}
-        Therefore we have proved that $Q \subseteq S_{1,1}$, hence we get that $\varphi$ induces an isomorphism of $S_{1,1}$ and $Q$. 
-    
-        \item[(ii)] We have $\varphi(\{p\} \times \mathbb{P}^1) = \{ [aY_0, aY_1, bY_0, bY_1] \mid [Y_0,Y_1] \in \mathbb{P}^1 \}$, which is equation of the line passing through $[a,0,b,0],[0,a,0,b] \in \mathbb{P}^3$. Similarly image of $\mathbb{P}^1 \times \{p\}$ is again a line in $\mathbb{P}^3$. But then note that for $p \neq q \in \mathbb{P}^1$, we have $(\{p\} \times \mathbb{P}^1) \cap (\{q\} \times \mathbb{P}^1) = \emptyset$, hence their images are disjoint lines in $Q$. But we know that any two lines in $\mathbb{P}^2$ have a intersection, hence $\mathbb{P}^1 \times \mathbb{P}^1 \not\cong \mathbb{P}^2$.
-        
-        \item[(iii)] Let us consider the image of $\mathbb{A}^1 \times \mathbb{A}^1$ in $\mathbb{P}^3$ under the Segre embedding. We get 
+        Therefore we have proved that $Q \subseteq S_{1,1}$, hence we get that $\varphi$ induces an isomorphism of $S_{1,1}$ and $Q$.
+
+    \item[(ii)] We have $\varphi(\{p\} \times \mathbb{P}^1) = \{ [aY_0, aY_1, bY_0, bY_1] \mid [Y_0,Y_1] \in \mathbb{P}^1 \}$, which is equation of the line passing through $[a,0,b,0],[0,a,0,b] \in \mathbb{P}^3$. Similarly image of $\mathbb{P}^1 \times \{p\}$ is again a line in $\mathbb{P}^3$. But then note that for $p \neq q \in \mathbb{P}^1$, we have $(\{p\} \times \mathbb{P}^1) \cap (\{q\} \times \mathbb{P}^1) = \emptyset$, hence their images are disjoint lines in $Q$. But we know that any two lines in $\mathbb{P}^2$ have a intersection, hence $\mathbb{P}^1 \times \mathbb{P}^1 \not\cong \mathbb{P}^2$.
+
+    \item[(iii)] Let us consider the image of $\mathbb{A}^1 \times \mathbb{A}^1$ in $\mathbb{P}^3$ under the Segre embedding. We get
         \begin{align*}
             \varphi(\mathbb{A}^1 \times \mathbb{A}^1) = \{ [ab,a,b,1] \in \mathbb{P}^3 \mid a,b \in k \}.
         \end{align*}
         Now consider the two lines $\ell_1 = \{[\mu,0,\lambda,0] \in \mathbb{P}^3 \mid [\mu,\lambda] \in \mathbb{P}^1 \}$ and $\ell_2 = \{[\mu,\lambda,0,0] \in \mathbb{P}^3 \mid [\mu,\lambda] \in \mathbb{P}^1 \}$ through $[1,0,0,0]$ and contained in $Q$. We claim that the complement $U$ of these two lines is $\varphi(\mathbb{A}^1 \times \mathbb{A}^1)$. Clearly we have $\varphi(\mathbb{A}^1 \times \mathbb{A}^1) \cap (\ell_1 \cup \ell_2) = \emptyset$. Conversely let $[X_0,X_1,X_2,X_3] \notin \varphi(\mathbb{A}^1 \times \mathbb{A}^1)$, then $[X_0,X_1,X_2,X_3] = \varphi([a,b],[1,0]) = [a,0,b,0] \in \ell_1$ or $[X_0,X_1,X_2,X_3] = \varphi([1,0],[c,d]) = [c,d,0,0] \in \ell_2$. Therefore we have shown that $U = \varphi(\mathbb{A}^1 \times \mathbb{A}^1)$.
-    
-        \item[(iv)] Under the projection $\pi\vert_Q : Q \dashrightarrow \mathbb{P}^2$, $[X_0,X_1,X_2,X_3] \mapsto [X_1,X_2,X_3]$. Then 
+
+    \item[(iv)] Under the projection $\pi\vert_Q : Q \dashrightarrow \mathbb{P}^2$, $[X_0,X_1,X_2,X_3] \mapsto [X_1,X_2,X_3]$. Then
         \begin{align*}
             \pi(U) = \pi(\varphi(\mathbb{A}^1 \times \mathbb{A}^1)) = [a,b,1] \in \mathbb{A}^2 \subseteq \mathbb{P}^2.
         \end{align*}
-        And the two lines $\ell_1$ and $\ell_2$ maps to the two points $[0,1,0]$ and $[1,0,0]$ respectively. 
-    
-        \item[(v)] Since $\pi$ is just the projection of $\mathbb{P}^3$ from the point $[0,0,0,1]$ onto the $\mathbb{P}^2$, its domain is given by $\mathrm{dom}\, \pi = \mathbb{P}^3 \setminus [0,0,0,1]$, and hence $\mathrm{dom}\, \pi\vert_Q = Q \setminus [0,0,0,1]$. On the other hand the domain of the Segre embedding is $\mathrm{dom} \, \varphi = \mathbb{P}^1 \times \mathbb{P}^1$. 
-    \end{enumerate}
+        And the two lines $\ell_1$ and $\ell_2$ maps to the two points $[0,1,0]$ and $[1,0,0]$ respectively.
+
+    \item[(v)] Since $\pi$ is just the projection of $\mathbb{P}^3$ from the point $[0,0,0,1]$ onto the $\mathbb{P}^2$, its domain is given by $\mathrm{dom}\, \pi = \mathbb{P}^3 \setminus [0,0,0,1]$, and hence $\mathrm{dom}\, \pi\vert_Q = Q \setminus [0,0,0,1]$. On the other hand the domain of the Segre embedding is $\mathrm{dom} \, \varphi = \mathbb{P}^1 \times \mathbb{P}^1$.
+\end{enumerate}
 
 \begin{prob}
-    Problem 5.3
+    Which of the following expressions define rational maps \( \varphi: \mathbbm{P}^n \to \mathbbm{P}^m \) (with \( n,m = 1 \) or 2) between projective spaces of appropriate dimensions? In each case determine \( \operatorname{dom} \varphi, \) say if \( \varphi \) is birational, and if so, describe the inverse map.
 \end{prob}
 
 \sol.
@@ -128,26 +128,31 @@
 \begin{prob}
     Let $C \subseteq \mathbb{P}^3$ be an irreducible curve defined by $C = Q_1 \cap Q_2$, where $Q_1 : (TX = q_1),$ and $Q_2 : (TY = q_2)$, with $q_1,q_2$ quadratic forms in $X,Y,Z$. Show that the projection $\pi : \mathbb{P}^3  \dashrightarrow \mathbb{P}^2$ defined by $(X,Y,Z,T) \mapsto (X,Y,Z)$ restricts to an isomorphism of $C$ with the plane curve $D \subseteq \mathbb{P}^2$ given by $Xq_2 = Yq_1$.
 \end{prob}
-    
-    \sol.
-    Let us define the map $\varphi : D \dashrightarrow C$, as follows, 
-    \begin{align*}
-        [X,Y,Z] \mapsto \begin{cases} [X,Y,Z,\frac{q_1}{X}] & \mbox{ if } X \neq 0 \\ 
-        [X,Y,Z,\frac{q_2}{Y}] & \mbox{ if } Y \neq 0 \end{cases}
-    \end{align*}
-    Note that this is indeed a map from $D$ to $C$, as if $[X,Y,Z] \in D$ with $X \neq 0$, then we get that $Xq_2 = Yq_1$, and hence, $TX = q_1$ and $TY = \frac{Yq_1}{X} = \frac{Xq_2}{X} = q_2$, thus $\varphi([X,Y,Z]) \in C$, and similarly for $Y \neq 0$, we have $[X,Y,Z,T] = \varphi([X,Y,Z]) \in C$. On the other hand restricting the projection onto $C$, we get that $\pi([X,Y,Z,T]) = [X,Y,Z]$, and since $TX = q_1$ and $TY = q_2 $ we get that $Yq_1 = TXY = Xq_2$, thus we indeed have $[X,Y,Z] \in D$. 
-    
-    Finally note that $\pi\vert_C \circ \varphi = \mathrm{id}_D$ is obvious and 
-    \begin{align*}
-        \varphi(\pi\vert_C([X,Y,Z,T])) = \varphi([X,Y,Z]) = \begin{cases}
-            [X,Y,Z,\frac{q_1}{X}] & \mbox{ if } X \neq 0 \\ 
-            [X,Y,Z,\frac{q_2}{Y}] & \mbox{ if } Y \neq 0 
-        \end{cases} = [X,Y,Z,T],
-    \end{align*}
-    where the last equality follows from the fact that $TX = q_1$ and $TY = q_2$ for points in $C$. Thus we indeed have $\varphi \circ \pi\vert_C = \mathrm{id}_C$. Hence $\pi$ restricted onto $C$ induces an isomorphism of $C$ with the plane curve $D$.
+
+\sol.
+Let us define the map $\varphi : D \dashrightarrow C$, as follows,
+\begin{align*}
+    [X,Y,Z] \mapsto \begin{cases} [X,Y,Z,\frac{q_1}{X}] & \mbox{ if } X \neq 0 \\
+              [X,Y,Z,\frac{q_2}{Y}] & \mbox{ if } Y \neq 0\end{cases}
+\end{align*}
+Note that this is indeed a map from $D$ to $C$, as if $[X,Y,Z] \in D$ with $X \neq 0$, then we get that $Xq_2 = Yq_1$, and hence, $TX = q_1$ and $TY = \frac{Yq_1}{X} = \frac{Xq_2}{X} = q_2$, thus $\varphi([X,Y,Z]) \in C$, and similarly for $Y \neq 0$, we have $[X,Y,Z,T] = \varphi([X,Y,Z]) \in C$. On the other hand restricting the projection onto $C$, we get that $\pi([X,Y,Z,T]) = [X,Y,Z]$, and since $TX = q_1$ and $TY = q_2 $ we get that $Yq_1 = TXY = Xq_2$, thus we indeed have $[X,Y,Z] \in D$.
+
+Finally note that $\pi\vert_C \circ \varphi = \mathrm{id}_D$ is obvious and
+\begin{align*}
+    \varphi(\pi\vert_C([X,Y,Z,T])) = \varphi([X,Y,Z]) = \begin{cases}
+                                                            [X,Y,Z,\frac{q_1}{X}] & \mbox{ if } X \neq 0 \\
+                                                            [X,Y,Z,\frac{q_2}{Y}] & \mbox{ if } Y \neq 0
+                                                        \end{cases} = [X,Y,Z,T],
+\end{align*}
+where the last equality follows from the fact that $TX = q_1$ and $TY = q_2$ for points in $C$. Thus we indeed have $\varphi \circ \pi\vert_C = \mathrm{id}_C$. Hence $\pi$ restricted onto $C$ induces an isomorphism of $C$ with the plane curve $D$.
 
 \begin{prob}
-    Problem 5.6
+    For each of the following plane curves, write down the 3 standard affine pieces, and determine the intersection of the curve with the 3 coordinate axes.
+    \begin{enumerate}[label = (\alph*)]
+        \item \( y^2z = x^3 + axz^2 + bz^3 \)
+        \item \( x^2y^2 + y^2z^2 + x^2z^2 = 2xyz(x+y+z) \)
+        \item \( xz^3=(x^2+z^2)y^2 \)
+    \end{enumerate}
 \end{prob}
 \sol. \begin{enumerate}[label = (\alph*)]
     \item The affine pieces are:
@@ -167,9 +172,9 @@
 
     \item The affine pieces are:
           \begin{enumerate}[label = (\roman*)]
-              \item \( (x=1): (y-z)^2-2yz(y+z)=0 \)
-              \item \( (y=1): (z-x)^2-2zx(z+x)=0 \)
-              \item \( (z=1): (x-y)^2-2xy(x+y)=0 \)
+              \item \( (x=1): y^2z^2 + (y-z)^2-2yz(y+z)=0 \)
+              \item \( (y=1): z^2x^2 + (z-x)^2-2zx(z+x)=0 \)
+              \item \( (z=1): x^2y^2 + (x-y)^2-2xy(x+y)=0 \)
           \end{enumerate}
           The intersections with the coordinate axes are:
           \begin{enumerate}[label = (\roman*)]
@@ -207,28 +212,28 @@ $$\Gamma(\varphi)\simeq \text{Rational curve in }\Pn^3$$
 
 \begin{prob}
     \begin{enumerate}
-        \item[(i)] Prove that the product of two irreducible algebraic sets is again irreducible. 
-        \item[(ii)] Describe the closed sets of the topology on $\mathbb{A}^2 = \mathbb{A}^1 \times \mathbb{A}^1$ which is the product of the Zariski topologies on the two factors; now find a closed subset of the Zariski topology of $\mathbb{A}^2$ not of this form. 
+        \item[(i)] Prove that the product of two irreducible algebraic sets is again irreducible.
+        \item[(ii)] Describe the closed sets of the topology on $\mathbb{A}^2 = \mathbb{A}^1 \times \mathbb{A}^1$ which is the product of the Zariski topologies on the two factors; now find a closed subset of the Zariski topology of $\mathbb{A}^2$ not of this form.
     \end{enumerate}
-    \end{prob}
-    
-    \sol.
-    \begin{enumerate}
-        \item[(i)] Suppose that $X \times Y = Q_1 \cup Q_2$, with each $Q_i$ a closed subset of $X \times Y$.
+\end{prob}
+
+\sol.
+\begin{enumerate}
+    \item[(i)] Suppose that $X \times Y = Q_1 \cup Q_2$, with each $Q_i$ a closed subset of $X \times Y$.
         For each $x \in X$, the closed set $\{x\} \times Y$ is isomorphic to $Y$, and is therefore irreducible.
         Since $\{x\} \times Y= ((\{x\} \times Y) \cap Q_1) \cup ((\{x\} \times Y ) \cap Q_2)$ either $\{x\} \times Y \subseteq Q_1$ or else $\{x\} \times Y \subseteq Q_2$.
-    
-        The subset $X_1 \subseteq X$ consisting of those $x \in X$ with $\{x\} \times Y \subseteq Q_1$ is a closed subset, to see this note that $X_1 = \cap_{y \in Y} X_y$, where $X_y$ is the collection of points $x \in X$ such that $\{x\} \times \{y\} \in Q_1$. Since $X_y \times \{y\} = (X \times \{y\}) \cap Q_1$, $X_y$ and hence $X_1$ is closed. Similarly we can define the closed subset $X_2$. 
-        
+
+        The subset $X_1 \subseteq X$ consisting of those $x \in X$ with $\{x\} \times Y \subseteq Q_1$ is a closed subset, to see this note that $X_1 = \cap_{y \in Y} X_y$, where $X_y$ is the collection of points $x \in X$ such that $\{x\} \times \{y\} \in Q_1$. Since $X_y \times \{y\} = (X \times \{y\}) \cap Q_1$, $X_y$ and hence $X_1$ is closed. Similarly we can define the closed subset $X_2$.
+
         Since $X = X_1 \cup X_2$ and $X$ is irreducible, we either have $X = X_1$ or $X = X_2$. But $X = X_i$ implies $X \times Y = Q_i$, contradicting the fact the both of the $Q_i$'s are nonempty. Therefore $X \times Y$ is irreducible.
-        
-        \item[(ii)] We know that the closed subsets of $\mathbb{A}^1$ under the Zariski topology are finite subsets of $\mathbb{A}^1$ and the whole set $\mathbb{A}^1$. Thus under the product topology on $\mathbb{A}^2 = \mathbb{A}^1 \times \mathbb{A}^1$ closed subsets are once again finite subsets of $\mathbb{A}^1 \times \mathbb{A}^1$, $\{x_1,\dots,x_n\} \times \mathbb{A}^1$, $\mathbb{A}^1 \times \{y_1,\dots,y_m\}$ and $\mathbb{A}^1 \times \mathbb{A}^1$.
-        
-        Consider the closed subset $C = V(X-Y) = \{(a,a) \mid a \in k\} \subseteq \mathbb{A}^2$. If $k$ is an infinite field, then $C$ does not belong to any of the closed sets coming from the product topology on $\mathbb{A}^1 \times \mathbb{A}^1$. 
-    \end{enumerate}
+
+    \item[(ii)] We know that the closed subsets of $\mathbb{A}^1$ under the Zariski topology are finite subsets of $\mathbb{A}^1$ and the whole set $\mathbb{A}^1$. Thus under the product topology on $\mathbb{A}^2 = \mathbb{A}^1 \times \mathbb{A}^1$ closed subsets are once again finite subsets of $\mathbb{A}^1 \times \mathbb{A}^1$, $\{x_1,\dots,x_n\} \times \mathbb{A}^1$, $\mathbb{A}^1 \times \{y_1,\dots,y_m\}$ and $\mathbb{A}^1 \times \mathbb{A}^1$.
+
+        Consider the closed subset $C = V(X-Y) = \{(a,a) \mid a \in k\} \subseteq \mathbb{A}^2$. If $k$ is an infinite field, then $C$ does not belong to any of the closed sets coming from the product topology on $\mathbb{A}^1 \times \mathbb{A}^1$.
+\end{enumerate}
 
 \begin{prob}
-    Problem 5.12
+    Let \( C \) be the cubic curve of (5.0). Prove that any regular function on \( C \) is constant.
 \end{prob}
 
 \sol. The given curve is \( C: (Y^2Z = X^3 + aXZ^2 + bZ^3) \subset \mathbbm{P}^2 \). The affine pieces are
@@ -264,14 +269,14 @@ It's not hard to see $\im \varphi \subset S$. Now note that the map $\varphi$ gi
 \]
 The first V.S is of dimension $21$ and the later one has dimension $15$. Thus the kernal has dimension $6$. Now note that the polynomials defining $S$ are linearly independent. So, $\im \varphi = S$. Thus the image of $\varphi$ is given by the variety $S$. Now take the map $\psi : S \to \Pn^3$ that maps $[t_0:\cdots:t_5] \to [t_0:t_1:t_2]$ works as the inverse map of $\varphi$ (it is defined except for $[0:0:0:0:0:1]$). So, $\varphi$ is an isomorphism.  Any line in $\Pn^2$ can be given by the set $\qty{[X:Y:AX+BY]}$, the image of that under $\varphi$ is $(X^2, XY, AX^2+BXY, Y^2, AXY + BY^2, A^2X^2 + 2AXBY + B^2Y^2)$. Note that the projective transformation given by
 \[
-  \begin{bmatrix}
-    1 & 0 & 0 & 0 & 0 & 0 \\
-    0 & 1 & 0 & 0 & 0 & 0 \\
-    -A & -B & 1 & 0 & 0 & 0 \\
-    0 & 0 & 0 & 1 & 0 & 0 \\
-    0 & A & 0 & -B & 1 & 0 \\
-    -A^2 & -2AB & 0 & -B^2 & 0 & 1 \\
-  \end{bmatrix}
+    \begin{bmatrix}
+        1    & 0    & 0 & 0    & 0 & 0 \\
+        0    & 1    & 0 & 0    & 0 & 0 \\
+        -A   & -B   & 1 & 0    & 0 & 0 \\
+        0    & 0    & 0 & 1    & 0 & 0 \\
+        0    & A    & 0 & -B   & 1 & 0 \\
+        -A^2 & -2AB & 0 & -B^2 & 0 & 1 \\
+    \end{bmatrix}
 \]
 is valid since its determinant is 1 (easily computed using the fact that it is a lower triangular matrix). Any conic in $\Pn^2$ can be re-parametrized so that it is given by $[u^2:uv:v^2]$. It's image in $S$ is twisted quardics.
 \vspace*{0.2cm}
