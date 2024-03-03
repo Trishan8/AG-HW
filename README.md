@@ -6,6 +6,6 @@
    - UAG Chapter 4 - 4.1, 4.2, 4.4, 4.6 , 4.7, 4.8. 4.9, 4.11, 4.12
    - UAG Chapter 1 - 1.1, 1.2, 1.8, 1.9, 1.10
    - UAG Chapter 2 - 2.1,2.2,2.3,2.4,2.5,2.9,2.10,2.11,2.12 
-- [ ]  Homework-3 (([PDF](./Pdf/HW3.pdf))
+- [x]  Homework-3 (([PDF](./Pdf/HW3.pdf))
    - UAG Chapter 5 - 5.1,5.2,5.3,5.6,5.7,5.9,5.10,5.12,5.13
  ## Post-Midsem (Fulton)
