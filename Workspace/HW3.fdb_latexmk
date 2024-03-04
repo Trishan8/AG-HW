@@ -1,7 +1,7 @@
 # Fdb version 4
-["pdflatex"] 1709360689 "/home/awnathan/AG-HW/Workspace/HW3.tex" "HW3.pdf" "HW3" 1709360691 0
+["pdflatex"] 1709528099 "/home/awnathan/AG-HW/Workspace/HW3.tex" "HW3.pdf" "HW3" 1709528101 0
   "/home/awnathan/.texlive/texmf-var/fonts/pk/ljfour/public/bbm/bbm12.600pk" 1709103595 8424 d7f5ed7815015569d251324f2307cb52 ""
-  "/home/awnathan/AG-HW/Workspace/HW3.tex" 1709360689 22929 a1db054cd2ba7f5b238f21acc5780c62 ""
+  "/home/awnathan/AG-HW/Workspace/HW3.tex" 1709528099 22912 e821451988b9828e719e7fd36eadfed9 ""
   "/usr/share/texmf-dist/fonts/enc/dvips/ebgaramond/ebgm_fc2mbn.enc" 1704400182 2970 89c5318a47449b4215340e7a37f35279 ""
   "/usr/share/texmf-dist/fonts/enc/dvips/ebgaramond/ebgm_tsrvmb.enc" 1704400182 2994 28362530a7f06bca5daa08a5e64a433b ""
   "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1704400182 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -242,9 +242,9 @@
   "/usr/share/texmf-dist/web2c/texmf.cnf" 1704400182 40684 9b9ec0b4288972636ff6a3b9c4238efc ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1709102851 4478429 385ad1d6b64c93bd02d3a0cc5f72992b ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1709102818 6768054 21452f52ecda4d1dd32aab416e77cd45 ""
-  "HW3.aux" 1709360691 554 199b5e648f89bced0dfadf827c38c11c "pdflatex"
-  "HW3.out" 1709360691 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "HW3.tex" 1709360689 22929 a1db054cd2ba7f5b238f21acc5780c62 ""
+  "HW3.aux" 1709528101 554 199b5e648f89bced0dfadf827c38c11c "pdflatex"
+  "HW3.out" 1709528101 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "HW3.tex" 1709528099 22912 e821451988b9828e719e7fd36eadfed9 ""
   "trishan2.sty" 1709103746 5667 294eb0d0c52578da47911e5dc2d8b50b ""
   (generated)
   "HW3.aux"
