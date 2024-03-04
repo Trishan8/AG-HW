@@ -9,3 +9,6 @@
 - [x]  Homework-3 (([PDF](./Pdf/HW3.pdf))
    - UAG Chapter 5 - 5.1,5.2,5.3,5.6,5.7,5.9,5.10,5.12,5.13
  ## Post-Midsem (Fulton)
+- [ ] Homework-4
+   - AC Chapter 3 - 3.4,3.6,3.8,3.12,3.13,3.15,3.16,3.19,3.22,3.23,3.24
+   - Complete the proofs of this chapter which are incomplete.
