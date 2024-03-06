@@ -69,11 +69,32 @@ In this problem we will try to trace the path of `Theorem 2' in `page 35'. Let, 
     \arrow["\pi", from=1-3, to=1-4]
     \arrow[from=1-4, to=1-5]
     \end{tikzcd}\]
-where $i$ is the map $i(\bar{G})=\overline{FG}$ and $\pi$ the natural projection map. It's an exact sequence. Thus by the previous problem we have, $$\dim_k R/(F,\m_p^n) = \dim_k R/\m_p^n - \dim_k R/\m_p^{n-m}= \binom{n+r-1}{r}-\binom{n+r-m-1}{r}$$ If we expand the above binomal coefficients it's not hard to see the above is polynomial over $n$, which has degree $r-1$ and leading coefficient is $m/r!$. Now from a rsult stated in class it follows, $$R/(\m_p^n,F) \simeq \oo/\m^n$$ Thus $\chi(n) = \dim_k \oo/\m^n$ is a polynomial of $n$ of degree $(r-1)$ and leading coefficient is $m/r!$ as desired. $\hfill \blacksquare$
+where $i$ is the map $i(\bar{G})=\overline{FG}$ and $\pi$ the natural projection map. It's an exact sequence. Thus by the previous problem we have, $$\dim_k R/(F,\m_p^n) = \dim_k R/\m_p^n - \dim_k R/\m_p^{n-m}= \binom{n+r-1}{r}-\binom{n+r-m-1}{r}$$ If we expand the above binomal coefficients it's not hard to see the above is polynomial over $n$, which has degree $r-1$ and leading coefficient is $m/r!$. Now from a rsult stated in class \textcolor{maroon}{*} it follows, $$R/(\m_p^n,F) \simeq \oo/\m^n$$ Thus $\chi(n) = \dim_k \oo/\m^n$ is a polynomial of $n$ of degree $(r-1)$ and leading coefficient is $m/r!$ as desired. $\hfill \blacksquare$
 
 
 \section{Problem \textcolor{maroon}{3.23} and \textcolor{maroon}{3.24}} %last two problems 
 
 
+\pagebreak
+
+\section*{\S Exercises in chapter 2 needed for proving theorems in chapter 3}
+
+\textcolor{maroon}{\ts{2.22}} We know given a map $f : V \to W$ between affine varieties, it extends to a ring homomorphism $f^{\ast}: \oo_{f(P)}(W) \to \oo_{P}(V)$. Now if we have an affine transformation $T : \A^n \to \A^n$ it will have inverse affine map $T^{-1}$. By the functoriality of pullback we can say they will induce $T^{\ast}$ and ${T^{-1}}^{\ast}$ in the corresponding local ring of regular functions. We can also note $T^{\ast} \circ {T^{-1}}^{\ast}$ and ${T^{-1}}^{\ast} \circ T^{\ast}$ is identity and hence $T^{\ast}$ is isomorphism. Thus $T^{\ast}: \oo_{T(P)}(\A^n) \to \oo_n(\A^n)$ is an isomorphism. If we restrict $T$ to $V \subset \A^k$ on that case $T$ will map $V$ to an isomorphic (as subvariety) copy $V^T\subset \A^n$. Again by the same computuation we can say, $\oo_{P}(V) \simeq \oo_{T(P)}(V^T)$ are isomorphic.
+
+\vspace*{0.2cm}
+
+\noindent  \textcolor{maroon}{\ts{2.34}} In this case if $F+G$ was reducible then we could write $F+G = fg$. Now if we homogenize the polynomial we will get, $$(F+G)^{\ast} = x_{n+1}F+G = f^{\ast} g^{\ast}$$ here treat $(F+G)^{\ast}$ as linear a polynomial over the ring $k[x_1,\cdots,x_n]$, which is UFD and hence by Gauss lemma $k[x_1,\cdots,x_n][x_{n+1}]$ is also UFD. But it can't have any non-constant factor over $k[x_1,\cdots,x_n][x_{n+1}]$. So, $F+G$ is irreducilbe. 
+
+\vspace*{0.2cm}
+
+\noindent \textcolor{maroon}{\ts{2.35(c),2.36}} is done in the computation step of \ts{3.15} part (b). So not doing it again.
+
+\vspace*{0.2cm}
+
+\noindent \textcolor{maroon}{\ts{2.44}*} (* marked in previous section) At first we will define a map $\psi : \oo_P(\A^n) \to \oo_P(V)/J'\oo_P(V)$. Firtly, we have the map $\oo_P(\A^n) \to \oo_P(V)$, which takes $f/g$ (such that $g(P)\neq 0$) to $\bar{f}/\bar{g}$ where $\bar{f},\bar{g}$ are $f,g$ modulo $I = I(V)$. It's not hard to see $g \notin I$ so $\bar{g}(P)\neq0$. Thus the map is well defined. $J$ is an ideal containing $I$ and $J'$ is the image in local ring, then there is a natural projection map $\oo_P(V)/J'\oo_p(V)$. Compositioon of this two map will be $\psi$.
+
+\vspace*{0.2cm}
+
+Now it's not hard to see $\psi$ is a surjective homomorphism. We will compute the kernal of it $\ker \psi$. Let, $f/g \in \oo_p(\A^n)$ such that $\bar{f}/\bar{g} \in J'\oo_p(V)$. We can write $$\bar{f}/\bar{g} = \sum \frac{j_i}{g'_i}$$ where $j_i \in J'$ and $g'_i$ are polynomial corresponding $g_i$(that don't vanish at $P$), i.e $g'_i =g_i \pmod{I}$. So, $\bar{f} \times \qty(\prod g'_i) \in J'\oo_p(V)$. Thus we can say, $f \times \qty(\prod g_i) \in J\oo_p(\A^n)$. Since $g_i$ are invertible we can say $f \in J\oo_p(\A^n)$. So, $\ker \psi \subseteq J\oo_p(\A^n)$. It's not hard to see $J\oo_p(\A^n) \subseteq \ker \psi$ thus we get, $\ker \psi = J\oo_p(\A^n)$. And thus we have a natural isomorphism $$\bar{\psi}: \oo_p(\A^n)/J\oo_p(\A^n) \to \oo_p(V)/J'\oo_p(V)$$  If $J=I$ then the right side is just $\oo_p(V)$ and thus $\oo_p(V)\simeq \oo_p(\A^n)/I\oo_p(\A^n)$.
 
 \end{document}
