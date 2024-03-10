@@ -78,6 +78,16 @@ we get that for $n \leq m_p(F)$.
 \begin{align*}
     \dim_k \left( \mathfrak{m}^n/\mathfrak{m}^{n+1} \right) &= \dim_k \left( \mathscr{O}/\mathfrak{m}^{n+1}\right) - \dim_k(\mathscr{O}/\mathfrak{m}^n) \\ &= \binom{n+2}{2} - \binom{n+1}{2} \\ &= n+1
 \end{align*}
+
+In the proof of \textbf{Theorem 2, page 35 (Algebraic Curves, Fulton)}, we have already seen that 
+\begin{align*}
+    \dim_k \left(k[X,Y]/(F,I^n)\right) = n m - \frac{m(m-1)}{2},
+\end{align*} 
+where $m = m_P(F)$, hence we get that 
+\begin{align*}
+    \dim_k \left( \mathfrak{m}^n/\mathfrak{m}^{n+1} \right) = m
+\end{align*}
+if $n \geq m_p(F)$. Now suppose $P$ is not a simple point, then $m_P(F) \geq 2$, and hence $\dim_k \mathfrak{m}/\mathfrak{m}^2 = 2$. Hence $\dim_k \mathfrak{m}/\mathfrak{m}^2 = 1$ implies $P$ is a simple point. Now if $P$ is a simple point then $m_P(F) = 1$, and hence we get that $\dim_k \mathfrak{m}/\mathfrak{m}^2 = m - \frac{m(m-1)}{2} = 1$, since $m=1$. Thus we have shown that $P$ is simple if and only if $\dim_k \mathfrak{m}/\mathfrak{m}^2 = 1$, and otherwise we have $\dim_k \mathfrak{m}/\mathfrak{m}^2 = 2$.
 % Thus if $P$ is a simple point then we have $m_P(F) = 1$, hence $\dim_k \left(\mathfrak{m}/\mathfrak{m}^2\right) = $
 
 \section{Problem \textcolor{maroon}{3.15}} %Problem 6
