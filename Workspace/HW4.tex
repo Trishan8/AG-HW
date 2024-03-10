@@ -8,6 +8,21 @@
 \begin{document}
 \maketitle
 
+\section{Problem \textcolor{maroon}{3.6}} 
+\begin{Lem}{1} The $F$ and $G$ be forms of degree $r$ and $r+1$ respectively with no common factors in $k[X_1,\dots,X_n]$, then $F + G$ is irreducible.
+\end{Lem}
+
+\textit{Proof (of Lemma).} Suppose $F + G$ is reducible then there exists nonconstant polynomials $P,Q \in k[X_1,\dots,X_n]$ such that $F + G = PQ$. Now we consider the homogeneous both of these to get 
+\begin{align*}
+    X_{n+1} F + G = (F + G)^* = (PQ)^* = P^* Q^*.
+\end{align*}
+But note that $X_{n+1} F + G \in k(X_1,\dots,X_n)[X_{n+1}]$ is irreducible, hence one of $P^*$ or $Q^*$ is in $k[X_1,\dots,X_n]$. Then by comparing degrees we can WLOG assume that $Q^* \in k[X_1,\dots,X_n]$, and let $P = X_{n+1} R + S$, where $R , S \in k[X_1,\dots,X_n]$. Then we get that 
+\begin{align*}
+    X_{n+1} F + G = X_{n+1} R Q^* + S Q^* \Rightarrow F = R Q^* \mbox{ and } G = S Q^*
+\end{align*}
+But this contradicts the fact that $F$ and $G$ have no common factor, hence we get that $F + G$ is irreducible. 
+
+Now coming back to the main problem, suppose we are given tangent lines $L_i$ with multiplicities $r_i$, and we want to find an irreducible curve $F$ such that $L_i$ is a tangent to $F$ with multiplicity $r_i$. Note that $\prod_i L_i^{r_i}$ is a forms of degree $m = \sum_i r_i$. Then we can find a homogeneous polynomial $F_{m+1}$ of degree $m+1$ such that $F_{m+1}$ is not divisible by any of the $L_i$ (such a polynomial obvious exists). But then by the previous lemma $\prod_i L_i^{r_i} + F_{m+1}$ is irreducible, and clearly $F = \prod_i L_i^{r_i} + F_{m+1}$ satisfies the necessary conditions. 
 
 \section{Problem \textcolor{maroon}{3.8}} %Problem 3
 
@@ -44,6 +59,26 @@ is also invertible. By the previous case $m_P(F) = m_{(0,0)}(F^{T_1\circ T\circ 
     0 & 0\\
     0 & 1
 \end{pmatrix}$.\Qed
+
+\section{Problem \textcolor{maroon}{3.13}} 
+
+WLOG assume $P = (0,0)$, then we know that 
+\begin{align*}
+    \dim_k \left( \mathscr{O}/\mathfrak{m}^n \right) = \dim_k \left( k[X,Y]/(F,I^n)\right)
+\end{align*}
+where $I = (X,Y) \subseteq k[X,Y]$. Now as multiplicity of $F$ is $m_p(F)$, we have $F \in I^{m_P(F)}$ and hence we get that for $n \leq m_p(F)$, $F \in I^n$, thus $(F,I^n) = I^n$. But then we get that 
+\begin{align*}
+    \dim_k \left( k[X,Y]/(F,I^n)\right) = \dim_k\left(k[X,Y]/I^n\right) = \binom{n+1}{2} 
+\end{align*}
+Now from the exact sequence 
+\begin{align*}
+    0 \to \mathfrak{m}^n/\mathfrak{m}^{n+1} \to \mathscr{O}/\mathfrak{m}^{n+1} \to \mathscr{O}/\mathfrak{m}^n \to 0
+\end{align*}
+we get that for $n \leq m_p(F)$.
+\begin{align*}
+    \dim_k \left( \mathfrak{m}^n/\mathfrak{m}^{n+1} \right) &= \dim_k \left( \mathscr{O}/\mathfrak{m}^{n+1}\right) - \dim_k(\mathscr{O}/\mathfrak{m}^n) \\ &= \binom{n+2}{2} - \binom{n+1}{2} \\ &= n+1
+\end{align*}
+% Thus if $P$ is a simple point then we have $m_P(F) = 1$, hence $\dim_k \left(\mathfrak{m}/\mathfrak{m}^2\right) = $
 
 \section{Problem \textcolor{maroon}{3.15}} %Problem 6
 
