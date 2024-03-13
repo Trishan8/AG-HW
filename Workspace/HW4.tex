@@ -92,7 +92,7 @@ if $n \geq m_p(F)$. Now suppose $P$ is not a simple point, then $m_P(F) \geq 2$,
 
 \section{Problem \textcolor{maroon}{3.15}} %Problem 6
 
-\ts{Part (a).} With out loss of generality let, $P=(0,0)$ and the corresponding maximal ideal in $k[x,y]$ is $\m_p =(x,y)$ and extension it's image in $\oo_p(\A^2)$ is $\m_p(\A^2)$. Now we know, $$k[x,y]/\m_p^n \simeq k[x,y]_{\m_p}/ \m_p^n k[x,y]_{\m_p} \simeq \oo_p/\m_p(\A^2)^n$$ (it follows from the fact, residue field/ localization commutes with quotienting). Enough to commute $\dim_k k[x,y]/\m_p^n$. Now, $\m_p^n = (x^n,x^{n-1}y,x^{n-2}y^2,\cdots,y^n)$. The basis of $k[x,y]/\m_p^n$ must be the standard $i$ forms, with $i<n$. For each $i$ there are such $i+1$ forms. And hence, $$\chi(n) = \dim_k \oo_p/\m_p(\A^2)^n = \dim_k k[x,y]/\m_p^n = \frac{n(n+1)}{2}$$
+\ts{Part (a).} With out loss of generality let, $P=(0,0)$ and the corresponding maximal ideal in $k[x,y]$ is $\m_p =(x,y)$ and extension it's image in $\oo_p(\A^2)$ is $\m_p(\A^2)$. Now we know, $$k[x,y]/\m_p^n \simeq k[x,y]_{\m_p}/ \m_p^n k[x,y]_{\m_p} \simeq \oo_p/\m_p(\A^2)^n$$ (it follows from the fact, residue field/ localization commutes with quotienting). Enough to calculate $\dim_k k[x,y]/\m_p^n$. Now, $\m_p^n = (x^n,x^{n-1}y,x^{n-2}y^2,\cdots,y^n)$. The basis of $k[x,y]/\m_p^n$ must be the standard $i$ forms, with $i<n$. For each $i$ there are such $i+1$ forms. And hence, $$\chi(n) = \dim_k \oo_p/\m_p(\A^2)^n = \dim_k k[x,y]/\m_p^n = \frac{n(n+1)}{2}$$
 
 \vspace*{0.2cm}
 
@@ -116,9 +116,11 @@ In this problem we will try to trace the path of `Theorem 2' in `page 35'. Let, 
     \end{tikzcd}\]
 where $i$ is the map $i(\bar{G})=\overline{FG}$ and $\pi$ the natural projection map. It's an exact sequence. Thus by the previous problem we have, $$\dim_k R/(F,\m_p^n) = \dim_k R/\m_p^n - \dim_k R/\m_p^{n-m}= \binom{n+r-1}{r}-\binom{n+r-m-1}{r}$$ If we expand the above binomal coefficients it's not hard to see the above is polynomial over $n$, which has degree $r-1$ and leading coefficient is $m/r!$. Now from a rsult stated in class \textcolor{maroon}{*} it follows, $$R/(\m_p^n,F) \simeq \oo/\m^n$$ Thus $\chi(n) = \dim_k \oo/\m^n$ is a polynomial of $n$ of degree $(r-1)$ and leading coefficient is $m/r!$ as desired. $\hfill \blacksquare$
 
+\section{Problem \textcolor{maroon}{3.19}}
+From the definition of intersection number we can say, $I(P,F\cap G) \geq m_P(F)m_P(G)$ and the equality occurs if and only if $F$ and $G$ don't have common tangent at the point $P$. If $L$ is a tangent line to $F$ we can say, $m_p(L)=1$ and hence, $I(P,F \cap L) >m_p(F)$. Conversely, if $L$ is a line that intersects $F$ with $I(P,F\cap L)>m_p(F).m_P(L)=m_p(F)$, we can say $L$ and $F$ have tangent line in common at $P$ and hence $L$ has to be tangent to $F$ at $P$. $\hfill \blacksquare$
+\section{Problem \textcolor{maroon}{3.23}}%last two problems 
 
-\section{Problem \textcolor{maroon}{3.23} and \textcolor{maroon}{3.24}} %last two problems 
-
+\section{\textcolor{maroon}{3.24}} 
 
 \pagebreak
 
