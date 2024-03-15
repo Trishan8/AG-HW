@@ -8,82 +8,110 @@
 \begin{document}
 \maketitle
 
-\section{Problem \textcolor{maroon}{3.6}} 
+\section{Problem \textcolor{maroon}{3.4}}
+Without loss of generality, let \( P = (0,0) \) so that \( F = F_2 + \dots + F_d \), where \( F_i \) is a form of degree \( i \) and \( F_2 \neq 0 \). By definition, \( P \) is a node iff \( F_2 = L_1L_2 \) for distinct lines \( L_1, L_2 \) passing through \( P \). Suppose that \( P \) is a node, and let \( L_1 = uX+vY \) and \( L_2=pX+qY \). Then,
+\[
+    F_2 = upX^2 + (vp+uq)XY + cqY^2.
+\]
+As \( L_1  \) and \( L_2 \) are distinct, we have \( uq \neq vp \), and so \( (vp-uq)^2 = (vp+uq)^2 - 4uvpq \neq 0 \). But in this case we have \( F_{XX}(P) = 2up, F_{YY}(P) = 2vq, F_{XY}(P) = vp+uq \). So, if \( P \) is a node, we get \( F_{XX}(P)F_{YY}(P) \neq F_{XY}(P)^2 \).
+\smallskip
+
+Now suppose \( F_{XX}(P)F_{YY}(P) \neq F_{XY}(P)^2 \). Let \( 2a = F_{XX}(P), 2c = F_{YY}(P) \) and \( b = F_{XY}(P) \). Then the given condition translates to the equation \( at^2-bt+c=0 \) having two distinct roots \( \alpha, \beta \) in \( k \). Then,
+\[
+    F_2 = aX^2+bXY+cY^2 = (X+\beta Y)(aX+a\alpha Y),
+\]
+as \( a\alpha + a\beta = b \) and \( a\alpha \beta = c \). Therefore, the given condition implies that \( P \) is a node of \( F \).
+
+\section{Problem \textcolor{maroon}{3.6}}
 \begin{Lem}{1} The $F$ and $G$ be forms of degree $r$ and $r+1$ respectively with no common factors in $k[X_1,\dots,X_n]$, then $F + G$ is irreducible.
 \end{Lem}
 
-\textit{Proof (of Lemma).} Suppose $F + G$ is reducible then there exists nonconstant polynomials $P,Q \in k[X_1,\dots,X_n]$ such that $F + G = PQ$. Now we consider the homogeneous both of these to get 
+\textit{Proof (of Lemma).} Suppose $F + G$ is reducible then there exists nonconstant polynomials $P,Q \in k[X_1,\dots,X_n]$ such that $F + G = PQ$. Now we consider the homogeneous both of these to get
 \begin{align*}
     X_{n+1} F + G = (F + G)^* = (PQ)^* = P^* Q^*.
 \end{align*}
-But note that $X_{n+1} F + G \in k(X_1,\dots,X_n)[X_{n+1}]$ is irreducible, hence one of $P^*$ or $Q^*$ is in $k[X_1,\dots,X_n]$. Then by comparing degrees we can WLOG assume that $Q^* \in k[X_1,\dots,X_n]$, and let $P = X_{n+1} R + S$, where $R , S \in k[X_1,\dots,X_n]$. Then we get that 
+But note that $X_{n+1} F + G \in k(X_1,\dots,X_n)[X_{n+1}]$ is irreducible, hence one of $P^*$ or $Q^*$ is in $k[X_1,\dots,X_n]$. Then by comparing degrees we can WLOG assume that $Q^* \in k[X_1,\dots,X_n]$, and let $P = X_{n+1} R + S$, where $R , S \in k[X_1,\dots,X_n]$. Then we get that
 \begin{align*}
     X_{n+1} F + G = X_{n+1} R Q^* + S Q^* \Rightarrow F = R Q^* \mbox{ and } G = S Q^*
 \end{align*}
-But this contradicts the fact that $F$ and $G$ have no common factor, hence we get that $F + G$ is irreducible. 
+But this contradicts the fact that $F$ and $G$ have no common factor, hence we get that $F + G$ is irreducible.
 
-Now coming back to the main problem, suppose we are given tangent lines $L_i$ with multiplicities $r_i$, and we want to find an irreducible curve $F$ such that $L_i$ is a tangent to $F$ with multiplicity $r_i$. Note that $\prod_i L_i^{r_i}$ is a forms of degree $m = \sum_i r_i$. Then we can find a homogeneous polynomial $F_{m+1}$ of degree $m+1$ such that $F_{m+1}$ is not divisible by any of the $L_i$ (such a polynomial obvious exists). But then by the previous lemma $\prod_i L_i^{r_i} + F_{m+1}$ is irreducible, and clearly $F = \prod_i L_i^{r_i} + F_{m+1}$ satisfies the necessary conditions. 
+Now coming back to the main problem, suppose we are given tangent lines $L_i$ with multiplicities $r_i$, and we want to find an irreducible curve $F$ such that $L_i$ is a tangent to $F$ with multiplicity $r_i$. Note that $\prod_i L_i^{r_i}$ is a forms of degree $m = \sum_i r_i$. Then we can find a homogeneous polynomial $F_{m+1}$ of degree $m+1$ such that $F_{m+1}$ is not divisible by any of the $L_i$ (such a polynomial obvious exists). But then by the previous lemma $\prod_i L_i^{r_i} + F_{m+1}$ is irreducible, and clearly $F = \prod_i L_i^{r_i} + F_{m+1}$ satisfies the necessary conditions.
 
 \section{Problem \textcolor{maroon}{3.8}} %Problem 3
 
-\ts{Part (a).} We will first prove it for the case when $P = Q =(0,0)$. In this case the polynomial map $T : \A^2 \to \A^2$ must look like $(f,g)$ where $f$ and $g$ are polynomials vanishing at $(0,0)$. In this case we can wite $f = f_i + \cdots + f_t$, where $f_i  \in k[x,y],i \geq 1$ is homogeneous polynomial of degree $i$. Similarly, we can write for $g$ (as both of them are vanishing at $(0,0)$). If $m = m_P(F)$ then $F = F_m +F_{m+1}\cdots$ again $F_i$ are homogeneous polynomial of degree $m$. Now $F^T = F(f,g)$'s lowest degree will come from $F_m(f,g)$ since both $f,g$ has at-least one degree term we can say, $m_Q(F^T)\geq m_p(F)$.  
+\ts{Part (a).} We will first prove it for the case when $P = Q =(0,0)$. In this case the polynomial map $T : \A^2 \to \A^2$ must look like $(f,g)$ where $f$ and $g$ are polynomials vanishing at $(0,0)$. In this case we can wite $f = f_i + \cdots + f_t$, where $f_i  \in k[x,y],i \geq 1$ is homogeneous polynomial of degree $i$. Similarly, we can write for $g$ (as both of them are vanishing at $(0,0)$). If $m = m_P(F)$ then $F = F_m +F_{m+1}\cdots$ again $F_i$ are homogeneous polynomial of degree $m$. Now $F^T = F(f,g)$'s lowest degree will come from $F_m(f,g)$ since both $f,g$ has at-least one degree term we can say, $m_Q(F^T)\geq m_p(F)$.
 
 \vspace*{0.2cm}
 
- Now we will use the fact proved in page (33) to prove it for any $P,Q$. Let, $Q\neq (0,0)$ or $Q = T(P)\neq (0,0)$. Let $T_1 : \A^2 \to \A^2$ be the affine transformation that maps $(0,0)$ to $Q$ and $T_2$ be the affine map sends $P$ to $(0,0)$. Note that $T_1  \circ T \circ T_2$ is a polynomial map and it maps $(0,0)$. So by the above calculation we can say, \begin{align*}
-    m_P(F) &\leq m_{T_1  \circ T \circ T_2(0,0)}(F^{T_1  \circ T \circ T_2}) \\
-    &= m_{T_1  \circ T (Q)}(F^{T_1  \circ T }) \text{ (By result of page 33})\\
-    &= m_{T (Q)}(F^{T }) \text{ (By result of page 33})
- \end{align*}
+Now we will use the fact proved in page (33) to prove it for any $P,Q$. Let, $Q\neq (0,0)$ or $Q = T(P)\neq (0,0)$. Let $T_1 : \A^2 \to \A^2$ be the affine transformation that maps $(0,0)$ to $Q$ and $T_2$ be the affine map sends $P$ to $(0,0)$. Note that $T_1  \circ T \circ T_2$ is a polynomial map and it maps $(0,0)$. So by the above calculation we can say, \begin{align*}
+    m_P(F) & \leq m_{T_1  \circ T \circ T_2(0,0)}(F^{T_1  \circ T \circ T_2})         \\
+           & = m_{T_1  \circ T (Q)}(F^{T_1  \circ T }) \text{ (By result of page 33}) \\
+           & = m_{T (Q)}(F^{T }) \text{ (By result of page 33})
+\end{align*}
 
- \vspace*{0.2cm}
+\vspace*{0.2cm}
 
- \noindent \ts{Part (b).} Again we will prove it for $P=Q=(0,0)$. Let $T = (f,g)$ and 
- $$
- J_Q T = \begin{pmatrix} \dfrac{\partial f}{\partial X}(Q) & \dfrac{\partial f}{\partial Y}(Q) \\ \dfrac{\partial g}{\partial X}(Q) & \dfrac{\partial g}{\partial Y}(Q) \end{pmatrix}.
- $$
- Assume $J_Q T$ is invertible. Since $J_Q T$ is invertible, we can't have both $\dfrac{\partial f}{\partial X}(Q) = 0$ and $\dfrac{\partial f}{\partial Y}(Q) = 0$ or both $\dfrac{\partial g}{\partial X}(Q) = 0$ and $\dfrac{\partial g}{\partial Y}(Q) = 0$. Again by similar computation of part $(a)$ we have, since $Q = (0,0)$, this implies that the decomposition of $f$ and $g$ into homogeneous polynomials are $f = f_1 + \cdots + f_m$ 
+\noindent \ts{Part (b).} Again we will prove it for $P=Q=(0,0)$. Let $T = (f,g)$ and
+$$
+    J_Q T = \begin{pmatrix} \dfrac{\partial f}{\partial X}(Q) & \dfrac{\partial f}{\partial Y}(Q) \\ \dfrac{\partial g}{\partial X}(Q) & \dfrac{\partial g}{\partial Y}(Q) \end{pmatrix}.
+$$
+Assume $J_Q T$ is invertible. Since $J_Q T$ is invertible, we can't have both $\dfrac{\partial f}{\partial X}(Q) = 0$ and $\dfrac{\partial f}{\partial Y}(Q) = 0$ or both $\dfrac{\partial g}{\partial X}(Q) = 0$ and $\dfrac{\partial g}{\partial Y}(Q) = 0$. Again by similar computation of part $(a)$ we have, since $Q = (0,0)$, this implies that the decomposition of $f$ and $g$ into homogeneous polynomials are $f = f_1 + \cdots + f_m$
 and $g = g_1 + \cdots + g_n$. Thus,
- $$
- F^T = F(f,g) = F_m(f,g) + F_{m+1}(f,g) + \ldots
- $$
- Since the lowest degree forms of $f$ and $g$ are of degree $1$, we have that $T$ does not decrease the degree of the form $F_m(f,g)$. Similarly, $T$ does not decrease the degree of $F_{m+1}(f,g), \cdots$. Therefore we have that $m_{(0,0)}(F^T) = m_{(0,0)}(F)$. Now assume that either $Q = (a_1,b_1) \neq (0,0)$ or $P = (a_2,b_2) \neq (0,0)$. Assume that $J_Q T$ is invertible. Let $T_1$  be the translation that takes $(0,0)$ to $Q$ and $T_2$ be the translation that takes $P$ to $(0,0)$. Then we have
- $$
-  d(T_1\circ T\circ T_2) = d(T_1)\circ d(T) \circ d(T_2)
- $$
-is also invertible. By the previous case $m_P(F) = m_{(0,0)}(F^{T_1\circ T\circ T_2})$and the similar computation of multiplicities we can say $m_P(F^T)=m_Q(F)$. And hence our proof is complete. 
+$$
+    F^T = F(f,g) = F_m(f,g) + F_{m+1}(f,g) + \ldots
+$$
+Since the lowest degree forms of $f$ and $g$ are of degree $1$, we have that $T$ does not decrease the degree of the form $F_m(f,g)$. Similarly, $T$ does not decrease the degree of $F_{m+1}(f,g), \cdots$. Therefore we have that $m_{(0,0)}(F^T) = m_{(0,0)}(F)$. Now assume that either $Q = (a_1,b_1) \neq (0,0)$ or $P = (a_2,b_2) \neq (0,0)$. Assume that $J_Q T$ is invertible. Let $T_1$  be the translation that takes $(0,0)$ to $Q$ and $T_2$ be the translation that takes $P$ to $(0,0)$. Then we have
+$$
+    d(T_1\circ T\circ T_2) = d(T_1)\circ d(T) \circ d(T_2)
+$$
+is also invertible. By the previous case $m_P(F) = m_{(0,0)}(F^{T_1\circ T\circ T_2})$and the similar computation of multiplicities we can say $m_P(F^T)=m_Q(F)$. And hence our proof is complete.
 
 \vspace*{0.2cm}
 
 \noindent \ts{Part (c).} If $F= Y-X^2$ and $T =(X^2,Y)$, $P=Q =(0,0)$ we can see $m_P(F^T)=m_P(Y-X^4)=m_Q(F)=m_Q(Y-X^2)$. But the jacobian of $T$ is not invertible at $(0,0)$,as it is given by the matrix$\begin{pmatrix}
-    0 & 0\\
-    0 & 1
-\end{pmatrix}$.\Qed
+        0 & 0 \\
+        0 & 1
+    \end{pmatrix}$.\Qed
 
-\section{Problem \textcolor{maroon}{3.13}} 
+\section{Problem \textcolor{maroon}{3.12}}
+\begin{enumerate}[label = (\alph*)]
+    \item We first note that \( n \geq 1 \), as \( P \notin F \) for \( n = 0 \). For \( n = 1 \), \( F \) reduces to \( Y = X \). As this is a line, it is its own tangent at \( P \), and so \( \operatorname{ord}_P(L) = \operatorname{ord}_P(F) = \infty \), because any curve has infinite valuation in the local ring at a simple point. Therefore, \( F \) has a higher flex at \( P \) for \( n = 1 \).
+          \smallskip
 
-WLOG assume $P = (0,0)$, then we know that 
+          Now suppose \( n \geq 2 \). Then the tangent at \( P \) is \( L: Y = 0 \). Consider the non-tangent line \( X = 0 \). By the theorem on uniformizing parameters in \( \mathscr{O}_P(F) \), \( x \) is a uniformizing parameter. By definition, \( y = x^n \) in \( \Gamma(F) \), and so \( \operatorname{ord}_P(L) = n \). Therefore, \( F \) has a flex at \( P \) iff \( n \geq 3 \), and the flex is ordinary iff \( n =3 \).
+          \smallskip
+
+    \item We have \( \pdv{F}{Y}(P) = 1 \) and so \( P \) is a simple point. The line \( X=0 \) passes through \( P \) and is not tangent to \( F \), and so we take \( x \) as the uniformizing parameter. Following the proof of the theorem on uniformizing parameters, we get \( F = YG-X^2H \), with \( G = 1 + \cdots \in k[X,Y]\) and \( H =  -a + \cdots \in k[X] \). Hence, \( y = x^2hg^{-1} \) in \( \Gamma(F) \). Therefore, if \( a = 0 \), we get \( \operatorname{ord}_P(L) \geq 3 \) and so \( F \) has a flex at \( P \). Conversely, let \( F \) have a flex at \( P \). Then, \( y \in (x)^3 \) and so \( h \) cannot have a constant term, i.e, \( a = 0 \). \(\hfill \blacksquare\)
+          \smallskip
+
+          We claim \( \operatorname{ord}_P(L) = \min\qty{i \mid H_i \neq 0} + 2 \). This is because, \( \operatorname{ord}_P(L) = d \) iff \( y \in (x)^d \setminus (x)^{d+1} \), and this happens iff \( x^2h \) has first non-zero coefficient in degree \( d \). Thus, \( \operatorname{ord}_P(L) = d \) iff \( H \) has first non-zero coefficient in degree \( d-2 \).
+\end{enumerate}
+
+\section{Problem \textcolor{maroon}{3.13}}
+
+WLOG assume $P = (0,0)$, then we know that
 \begin{align*}
     \dim_k \left( \mathscr{O}/\mathfrak{m}^n \right) = \dim_k \left( k[X,Y]/(F,I^n)\right)
 \end{align*}
-where $I = (X,Y) \subseteq k[X,Y]$. Now as multiplicity of $F$ is $m_p(F)$, we have $F \in I^{m_P(F)}$ and hence we get that for $n \leq m_p(F)$, $F \in I^n$, thus $(F,I^n) = I^n$. But then we get that 
+where $I = (X,Y) \subseteq k[X,Y]$. Now as multiplicity of $F$ is $m_p(F)$, we have $F \in I^{m_P(F)}$ and hence we get that for $n \leq m_p(F)$, $F \in I^n$, thus $(F,I^n) = I^n$. But then we get that
 \begin{align*}
-    \dim_k \left( k[X,Y]/(F,I^n)\right) = \dim_k\left(k[X,Y]/I^n\right) = \binom{n+1}{2} 
+    \dim_k \left( k[X,Y]/(F,I^n)\right) = \dim_k\left(k[X,Y]/I^n\right) = \binom{n+1}{2}
 \end{align*}
-Now from the exact sequence 
+Now from the exact sequence
 \begin{align*}
     0 \to \mathfrak{m}^n/\mathfrak{m}^{n+1} \to \mathscr{O}/\mathfrak{m}^{n+1} \to \mathscr{O}/\mathfrak{m}^n \to 0
 \end{align*}
 we get that for $n \leq m_p(F)$.
 \begin{align*}
-    \dim_k \left( \mathfrak{m}^n/\mathfrak{m}^{n+1} \right) &= \dim_k \left( \mathscr{O}/\mathfrak{m}^{n+1}\right) - \dim_k(\mathscr{O}/\mathfrak{m}^n) \\ &= \binom{n+2}{2} - \binom{n+1}{2} \\ &= n+1
+    \dim_k \left( \mathfrak{m}^n/\mathfrak{m}^{n+1} \right) & = \dim_k \left( \mathscr{O}/\mathfrak{m}^{n+1}\right) - \dim_k(\mathscr{O}/\mathfrak{m}^n) \\ &= \binom{n+2}{2} - \binom{n+1}{2} \\ &= n+1
 \end{align*}
 
-In the proof of \textbf{Theorem 2, page 35 (Algebraic Curves, Fulton)}, we have already seen that 
+In the proof of \textbf{Theorem 2, page 35 (Algebraic Curves, Fulton)}, we have already seen that
 \begin{align*}
     \dim_k \left(k[X,Y]/(F,I^n)\right) = n m - \frac{m(m-1)}{2},
-\end{align*} 
-where $m = m_P(F)$, hence we get that 
+\end{align*}
+where $m = m_P(F)$, hence we get that
 \begin{align*}
     \dim_k \left( \mathfrak{m}^n/\mathfrak{m}^{n+1} \right) = m
 \end{align*}
@@ -97,40 +125,141 @@ if $n \geq m_p(F)$. Now suppose $P$ is not a simple point, then $m_P(F) \geq 2$,
 \vspace*{0.2cm}
 
 
-\noindent \ts{Part (b).} Let, $\oo = \oo_p(\A^r)$ and $\m = \m_p(\A^r)$. Again let, $P=(0,\cdots,0)$ and $\m_p =(x_1,\cdots,x_r)$. Just by the similar past as above it is enough to calculate $\dim_k k[x_1,\cdots,x_r]/\m_p^n$. Now, $\m_p$ is generated by all standard forms of degree $n$. Thus,the basis of $k[x_1,\cdots,x_2]/\m_p^n$ must be the standard $i$ forms, with $i<n$. Thus the basis set can be written as, 
+\noindent \ts{Part (b).} Let, $\oo = \oo_p(\A^r)$ and $\m = \m_p(\A^r)$. Again let, $P=(0,\cdots,0)$ and $\m_p =(x_1,\cdots,x_r)$. Just by the similar past as above it is enough to calculate $\dim_k k[x_1,\cdots,x_r]/\m_p^n$. Now, $\m_p$ is generated by all standard forms of degree $n$. Thus,the basis of $k[x_1,\cdots,x_2]/\m_p^n$ must be the standard $i$ forms, with $i<n$. Thus the basis set can be written as,
 $$\mathcal{B} = \qty{x_1^{i_1}\cdots x_r^{i_r}:i_1+\cdots +i_r \leq n-1}$$ Now cardinality of the set is, \begin{align*}
-    \abs{\mathcal{B}} &= \abs{\qty{x_1^{i_1}\cdots x_r^{i_r}:i_1+\cdots +i_r \leq n-1}} \\
-    &= \abs{\qty{1^{i_0}x_1^{i_1}\cdots x_r^{i_r}:i_0+i_1+\cdots +i_r =n-1}} \\
-    &= \binom{n+r-1}{r}
+    \abs{\mathcal{B}} & = \abs{\qty{x_1^{i_1}\cdots x_r^{i_r}:i_1+\cdots +i_r \leq n-1}}        \\
+                      & = \abs{\qty{1^{i_0}x_1^{i_1}\cdots x_r^{i_r}:i_0+i_1+\cdots +i_r =n-1}} \\
+                      & = \binom{n+r-1}{r}
 \end{align*}
 So we must have,  $$\chi(n) = \dim_k \oo/\m^n= \dim_k k[x_1,\cdots,x_r]/\m_p^n = \binom{n+r-1}{r}= \frac{n(n+1)\cdots (n+r-1)}{r!}$$ Thus the leading coefficient is $1/r!$. $\hfill \blacksquare$
 
 \section{Problem \textcolor{maroon}{3.16}} %Problem 7
 
 In this problem we will try to trace the path of `Theorem 2' in `page 35'. Let, $\oo = \oo_P(V(F))$ and $P=(0,0,\cdots)$ and $\m = \m_p(V(F))$. Consider the maximal ideal $\m_p=(x_1,\cdots,x_r)$ corresponding to the point $P$. Let, $R = k[x_1,\cdots,x_r]$. Let, $m_P(F)=m$ (multiplicity of $P$ w.r.t $F$). Then we have the follows SES(short exact sequence) \[\begin{tikzcd}
-    0 & {R/\m_p^{n-m}} & {R/\m_p^n} & {R/(F,\m_p^n)} & 0
-    \arrow[from=1-1, to=1-2]
-    \arrow["i", from=1-2, to=1-3]
-    \arrow["\pi", from=1-3, to=1-4]
-    \arrow[from=1-4, to=1-5]
+        0 & {R/\m_p^{n-m}} & {R/\m_p^n} & {R/(F,\m_p^n)} & 0
+        \arrow[from=1-1, to=1-2]
+        \arrow["i", from=1-2, to=1-3]
+        \arrow["\pi", from=1-3, to=1-4]
+        \arrow[from=1-4, to=1-5]
     \end{tikzcd}\]
 where $i$ is the map $i(\bar{G})=\overline{FG}$ and $\pi$ the natural projection map. It's an exact sequence. Thus by the previous problem we have, $$\dim_k R/(F,\m_p^n) = \dim_k R/\m_p^n - \dim_k R/\m_p^{n-m}= \binom{n+r-1}{r}-\binom{n+r-m-1}{r}$$ If we expand the above binomal coefficients it's not hard to see the above is polynomial over $n$, which has degree $r-1$ and leading coefficient is $m/r!$. Now from a rsult stated in class \textcolor{maroon}{*} it follows, $$R/(\m_p^n,F) \simeq \oo/\m^n$$ Thus $\chi(n) = \dim_k \oo/\m^n$ is a polynomial of $n$ of degree $(r-1)$ and leading coefficient is $m/r!$ as desired. $\hfill \blacksquare$
 
 \section{Problem \textcolor{maroon}{3.19}}
 From the definition of intersection number we can say, $I(P,F\cap G) \geq m_P(F)m_P(G)$ and the equality occurs if and only if $F$ and $G$ don't have common tangent at the point $P$. If $L$ is a tangent line to $F$ we can say, $m_p(L)=1$ and hence, $I(P,F \cap L) >m_p(F)$. Conversely, if $L$ is a line that intersects $F$ with $I(P,F\cap L)>m_p(F).m_P(L)=m_p(F)$, we can say $L$ and $F$ have tangent line in common at $P$ and hence $L$ has to be tangent to $F$ at $P$. $\hfill \blacksquare$
-\section{Problem \textcolor{maroon}{3.23}}%last two problems 
+\section{Problem \textcolor{maroon}{3.22}}
+\begin{enumerate}[label = (\alph*)]
+    \item We have \( I(P, F \cap L) \geq m_P(F)m_P(L) \geq 2 \), as \( P \) is a double point of \( F \) and \( L \) is a line. Further, equality does not hold as \( L \) is the common tangent to \( F \) and \( L \) at \( P \), and hence we get \( I(P,F \cap L) \geq 3 \). \(\hfill \blacksquare\)
+          \smallskip
 
-\section{\textcolor{maroon}{3.24}} 
+    \item As \( m_P(F)=2 \), \( F = F_2 + F_3 + \cdots \). We will repeatedly use the facts that intersection number depends only on the component passing through \( P \), and also only on the image of one curve in the coordinate ring of the other.
+
+          Suppose \( P \) is a cusp. If \( F_{XX}(P) = F_{XXX}(P) = 0 \), we get
+          \[
+              I(P, F \cap L) = I(P, Y \cap (aX^4 + bX^5 + \cdots)) \geq m_P(aX^4 + bX^5 + \cdots) = 4,
+          \]
+          which contradicts the assumption that \( P \) is a cusp. If \( F_{XX}(P) \neq 0 \), we will have
+          \[
+              I(P, F \cap L) = I(P, Y \cap (X^2(1+bX^3+\cdots))) = I(P, Y \cap X^2) = 2,
+          \]
+          which is again a contradiction to the assumption that \( P \) is a cusp. Therefore, we get if \( P \) is a cusp, we must have \( F_{XXX}(P) \neq 0 \).
+
+          Conversely, assume that \( F_{XXX}(P) \neq 0 \). By (a), \( I(P, F \cap L) \geq 3 \). It cannot happen that \( F_{XX}(P) \neq 0 \), as then we would get the intersection number is 2 as above. Hence, we get
+          \[
+              I(P, F \cap L) = I(P, Y \cap (X^3(a+bX^4+\cdots))) = I(P, Y \cap X^3) = 3,
+          \]
+          which shows that \( P \) is a cusp. \(\hfill \blacksquare\)
+          \smallskip
+
+    \item Let \( P = (0,0) \) and \( L = Y \) without loss of generality. Suppose \( F \) has the components \( F_1, \dots, F_k \) passing through \( P \). Then, \( I(P, F \cap L) = \sum_{i=1}^{k}I(P, F_i \cap L) \). But, for each \( i \), \( L \) is a common tangent of \( F_i \) and itself at \( P \), so that \( I(P, F_i \cap L) > 1 \). Hence,
+          \[
+              I(P, F \cap L) \geq 2k,
+          \]
+          and as \( I(P, F \cap L) = 3 \), we get \( k = 1 \). Therefore, \( F \) has a unique component passing through \( P \). \(\hfill \blacksquare\)
+\end{enumerate}
+\section{Problem \textcolor{maroon}{3.23}}
+We mimic the proofs in 3.22 to get the following generalization. Let \( m = m_P(F) \geq 2 \) and without loss of generality, assume \( P = (0,0) \) and \( L = Y \) is the unique tangent at \( P \) to \( F \).
+\begin{enumerate}[label = (\roman*)]
+    \item We claim that \( P \) is a hypercusp iff \( \pdv{F}{X^{m+1}}(P) \neq 0 \). We know \( F = F_m + \cdots \).
+
+          Suppose \( P \) is a hypercusp. If \( F_{X^{m}}(P) = F_{X^{m+1}}(P) = 0 \), we get
+          \[
+              I(P, F \cap L) = I(P, Y \cap (aX^{m+2} + \cdots)) \geq m_P(aX^{m+2} + \cdots) = m+2,
+          \]
+          which contradicts the assumption that \( P \) is a hypercusp. If \( F_{X^{m}}(P) \neq 0 \), we will have
+          \[
+              I(P, F \cap L) = I(P, Y \cap (X^m(1+bX^{m+1}+\cdots))) = I(P, Y \cap X^m) = m,
+          \]
+          which is again a contradiction to the assumption that \( P \) is a hypercusp. Therefore, we get if \( P \) is a hypercusp, we must have \( F_{X^{m+1}}(P) \neq 0 \).
+
+          Conversely, assume that \( F_{X^{m+1}}(P) \neq 0 \). We have \( I(P, F \cap L) > m \) as \( L \) is a common tangent to \( F \) and itself at \( P \). It cannot happen that \( F_{X^m}(P) \neq 0 \), as then we would get the intersection number is \( m \) as above. Hence, we get
+          \[
+              I(P, F \cap L) = I(P, Y \cap (X^{m+1}(a+\cdots))) = I(P, Y \cap X^{m+1}) = m+1,
+          \]
+          which shows that \( P \) is a hypercusp. \(\hfill \blacksquare\)
+          \smallskip
+
+    \item We claim that if \( P \) is a hypercusp, then \( F \) has at most \( \left\lfloor {\frac{m+1}{2}}\right\rfloor \) components passing through \( P \).
+
+          Suppose \( F \) has the components \( F_1, \dots, F_k \) passing through \( P \). Then, \( I(P, F \cap L) = \sum_{i=1}^{k}I(P, F_i \cap L) \). But, for each \( i \), \( L \) is a common tangent of \( F_i \) and itself at \( P \), so that \( I(P, F_i \cap L) > 1 \). Hence,
+          \[
+              I(P, F \cap L) \geq 2k,
+          \]
+          and as \( I(P, F \cap L) = m+1 \), we get \( k \leq \left\lfloor {\frac{m+1}{2}}\right\rfloor \). \(\hfill \blacksquare\)
+\end{enumerate}
+
+\section{Problem \textcolor{maroon}{3.24}} % Last part left
+\begin{enumerate}[label = (\alph*)]
+    \item By Problem 3.13, the vector space \( \mathfrak{m}/\mathfrak{m}^2 \) is of dimension 2 as \( P \) is not a simple point. The vector space consisting of all degree 1 forms also has dimension 2, and so we only need to show that the map \( aX+bY \mapsto \overline{ax+by} \) is an injective linear map to show that the spaces are isomorphic, and in fact this map is an isomorphism. Linearity is clear from the definition of the map. Because \( \mathfrak{m}^2 \) is generated by \( \overline{x}^2, \overline{xy} \) and \( \overline{y}^2 \), we also get that \( aX+bY \) is in the kernel iff \( a=b=0 \), and so we are done. \(\hfill \blacksquare\)
+          \smallskip
+
+    \item For each \( i, L_i \) is a common tangent to \( F \) and itself at \( P \), and hence, \( I(P, F \cap L_i) > m_P(F) = m \). Further, for \( i \neq j \), \( L_i \) and \( L_j \) are distinct linear forms, i.e, \( L_i \neq \lambda L_j \) for any \( \lambda \in k \). By (a), their images in \( \mathfrak{m}/\mathfrak{m}^2 \) must also be linearly independent and hence \( \overline{l_i} \neq \lambda \overline{l_j} \) for any \( \lambda \in k \).
+          \smallskip
+
+    \item Let \( L_i \) be the linear part of \( G_i \) for each \( i \). Then, as \( \overline{l_i} = \overline{g_i} \neq 0 \), we get \( \overline{l_i} \neq \lambda\overline{l_j} \) for any \( \lambda \in k \) if \( i \neq j \). We also note that as \( \overline{g_i} \neq 0, m_P(G_i) = 1 \). Now, as \( I(P, F \cap G_i) \geq m \cdot m_P(G_i) \) and we are given \( I(P, F \cap G_i) > m \), each \( G_i \) must have a common tangent with \( F \) at \( P \). Hence, we get \( F \) has \( m \) distinct tangents \( L_1, \dots, L_m \) at \( P \) and so \( P \) is an ordinary multiple point. \(\hfill \blacksquare\)
+          \smallskip
+
+    \item If \( P \) is an ordinary multiple point with tangents \( L_1, \dots, L_m \), we can take \( g_i = l_i \), where \( l_i \) is the image of the tangent \( L_i \) in \( \mathfrak{m} \).
+\end{enumerate}
 
 \pagebreak
 
 \section*{\S Exercises in chapter 2 needed for proving theorems in chapter 3}
 
+\textcolor{maroon}{\ts{2.15}}Throughout this solution, let \( X_j \) denote the \( {j }^{\text{th}} \) coordinate of a point \( X \) in affine space. For example, \( P_j = a_j \) for \( P = (a_1, \dots, a_n) \).
+
+\begin{enumerate}[label = (\alph*)]
+    \item Let \( T = (T_1, \dots, T_m): \mathbbm{A}^n \to \mathbbm{A}^m \) be an affine change of coordinates, with \( T_i(X) = \sum_{j=1}^{n}f_{i,j}X_j + f_i \). Let \( R \) be any point on the line \( PQ \), so that \( R_j = P_j + t(Q_j-P_j) \) for all \( j \), for some fixed \( t \in k \). Then,
+          \[
+              T(R)_i = T_i(R) = \sum_{j=1}^{n}f_{i,j}R_j + f_i = \qty(\sum_{j=1}^{n}f_{i,j}P_j + f_i) + t \qty(\sum_{j=1}^{n}f_{i,j}Q_j - f_{i,j}P_j) = T_i(P) + t(T_i(Q)-T_i(P))
+          \]
+          and so, \( T(R)_i = T(P)_i + t(T(Q)_i-T(P)_i) \) for all \( i \). Hence, \( T(R) \) is a point on the line joining \( T(P) \) and \( T(Q) \), i.e, \( T(L) \) is the line through \( T(P) \) and \( T(Q) \). \(\hfill \blacksquare\)
+          \smallskip
+
+    \item Let \( L \) be the line through \( P \) and \( Q \) in \( \mathbbm{A}^n \). Then, \( R \in L \) iff \( R_j = P_j + t(Q_j-P_j) \) for all \( j \), for some fixed \( t \in k \). Without loss of generality, let \( P_1 \neq Q_1 \) and consider the polynomials (in \( k[X_1, \dots, X_n] \)) \( f_2, \dots, f_n \) defined as,
+          \[
+              f_j(X) = X_j - P_j - \frac{Q_j-P_j}{Q_1-P_1}(X_1-P_1).
+              % \begin{cases}
+              %   X_j - P_j, \, Q_j = P_j \\
+              %   \frac{X_j-P_j}{Q_j-P_j} - \frac{X_1-P_1}{Q_1-P_1}, \, Q_j \neq P_j
+              % \end{cases}.
+          \]
+          Then, \( R \in L \iff f_j(R) = 0 \) for all \( j \). Hence, \( L = V(f_2, \dots, f_n) \) is a linear subvariety of \( \mathbbm{A}^n \). It is of dimension 1, as the affine change of coordinates \( T(X) = (X_1-P_1, f_2(X), \dots, f_n(X)) \) maps this linear subvariety to \( V(X_2, \dots, X_n) \).
+          \smallskip
+
+          Conversely, let \( V = V(X_2, \dots, X_n) \) be a linear subvariety of dimension 1. (We can assume that the variety is given by the vanishing of these coordinates by an affine change of coordinates.) Then, if \( P,Q \) are any two distinct points in \( V \), we have \( P = (p, 0, \dots, 0), Q = (q,0,\dots,0) \) for \( p \neq q \) in \( k \). Now, any point \( (x_1, \dots, x_n) \) is in \( V \) iff \( x_2 = \cdots = x_n = 0 \), and this happens iff \( (x_1, \dots, x_n) \) is in the line through \( P \) and \( Q \). Therefore, given any two distinct points in \( V \), \( V \) is obtained as the line joining those points. \(\hfill \blacksquare\)
+          \smallskip
+
+    \item From (b), we get a line is a subvariety \( V(f) \subseteq \mathbbm{A}^2 \), for \( f \) a linear polynomial in \( k[X,Y] \). But this is exactly the definition of a hyperplane.
+          \smallskip
+
+    \item Let \( L_1 \) be parametrised as \( t \mapsto P + t(Q-P) \), \( L_2 \) as \( t \mapsto P + t(R-P) \), \( L_3 \) as \( t \mapsto P' + t(Q'-P') \), \( L_4 \) as \( t \mapsto P' + t(R'-P')\). As \( L_1,L_2 \) are distinct, the vectors \( Q-P \) and \( R-P \) in \( k^2 \) are linearly independent, and so there is a matrix \( M \) sending \( Q-P \) to \( Q'-P' \) and \( R-P \) to \( R'-P' \). The map \( T(X) = M(X-P) + P' \) is an affine change of coordinates (being a composition of a translation and a linear map), maps \( P \) to \( P' \) and \( L_i \) to \( L_i' \) for \( i=1,2 \). \(\hfill \blacksquare\)
+\end{enumerate}
+
 \textcolor{maroon}{\ts{2.22}} We know given a map $f : V \to W$ between affine varieties, it extends to a ring homomorphism $f^{\ast}: \oo_{f(P)}(W) \to \oo_{P}(V)$. Now if we have an affine transformation $T : \A^n \to \A^n$ it will have inverse affine map $T^{-1}$. By the functoriality of pullback we can say they will induce $T^{\ast}$ and ${T^{-1}}^{\ast}$ in the corresponding local ring of regular functions. We can also note $T^{\ast} \circ {T^{-1}}^{\ast}$ and ${T^{-1}}^{\ast} \circ T^{\ast}$ is identity and hence $T^{\ast}$ is isomorphism. Thus $T^{\ast}: \oo_{T(P)}(\A^n) \to \oo_n(\A^n)$ is an isomorphism. If we restrict $T$ to $V \subset \A^k$ on that case $T$ will map $V$ to an isomorphic (as subvariety) copy $V^T\subset \A^n$. Again by the same computuation we can say, $\oo_{P}(V) \simeq \oo_{T(P)}(V^T)$ are isomorphic.
 
 \vspace*{0.2cm}
 
-\noindent  \textcolor{maroon}{\ts{2.34}} In this case if $F+G$ was reducible then we could write $F+G = fg$. Now if we homogenize the polynomial we will get, $$(F+G)^{\ast} = x_{n+1}F+G = f^{\ast} g^{\ast}$$ here treat $(F+G)^{\ast}$ as linear a polynomial over the ring $k[x_1,\cdots,x_n]$, which is UFD and hence by Gauss lemma $k[x_1,\cdots,x_n][x_{n+1}]$ is also UFD. But it can't have any non-constant factor over $k[x_1,\cdots,x_n][x_{n+1}]$. So, $F+G$ is irreducilbe. 
+\noindent  \textcolor{maroon}{\ts{2.34}} In this case if $F+G$ was reducible then we could write $F+G = fg$. Now if we homogenize the polynomial we will get, $$(F+G)^{\ast} = x_{n+1}F+G = f^{\ast} g^{\ast}$$ here treat $(F+G)^{\ast}$ as linear a polynomial over the ring $k[x_1,\cdots,x_n]$, which is UFD and hence by Gauss lemma $k[x_1,\cdots,x_n][x_{n+1}]$ is also UFD. But it can't have any non-constant factor over $k[x_1,\cdots,x_n][x_{n+1}]$. So, $F+G$ is irreducilbe.
 
 \vspace*{0.2cm}
 
@@ -143,5 +272,26 @@ From the definition of intersection number we can say, $I(P,F\cap G) \geq m_P(F)
 \vspace*{0.2cm}
 
 Now it's not hard to see $\psi$ is a surjective homomorphism. We will compute the kernal of it $\ker \psi$. Let, $f/g \in \oo_p(\A^n)$ such that $\bar{f}/\bar{g} \in J'\oo_p(V)$. We can write $$\bar{f}/\bar{g} = \sum \frac{j_i}{g'_i}$$ where $j_i \in J'$ and $g'_i$ are polynomial corresponding $g_i$(that don't vanish at $P$), i.e $g'_i =g_i \pmod{I}$. So, $\bar{f} \times \qty(\prod g'_i) \in J'\oo_p(V)$. Thus we can say, $f \times \qty(\prod g_i) \in J\oo_p(\A^n)$. Since $g_i$ are invertible we can say $f \in J\oo_p(\A^n)$. So, $\ker \psi \subseteq J\oo_p(\A^n)$. It's not hard to see $J\oo_p(\A^n) \subseteq \ker \psi$ thus we get, $\ker \psi = J\oo_p(\A^n)$. And thus we have a natural isomorphism $$\bar{\psi}: \oo_p(\A^n)/J\oo_p(\A^n) \to \oo_p(V)/J'\oo_p(V)$$  If $J=I$ then the right side is just $\oo_p(V)$ and thus $\oo_p(V)\simeq \oo_p(\A^n)/I\oo_p(\A^n)$.
+
+\textcolor{maroon}{\ts{2.42}}\begin{enumerate}[label = (\alph*)]
+    \item Consider the map \( \varphi: R/I \to R/J \) defined as,
+          \[
+              \varphi(x + I) = x + J.
+          \]
+          This is a ring homomorphism, as \[
+              \varphi((x+I)(y+I) + (z+I)) = \varphi((xy+z)+I) = (xy+z)+J = (x+J)(y+J)+(z+J) = \varphi(x+I)\varphi(y+I) + \varphi(z+I).
+          \]
+          This is surjective as given any \( x+J \in R/J, x \in R \), we get \( \varphi(x+I) = x+J \). We can do this because \( I \subseteq J \) means \( x \notin J \implies x \notin I \). \(\hfill \blacksquare\)
+          \smallskip
+
+    \item Consider the map \( \varphi: R/I \to S/IS \) defined as,
+          \[
+              \varphi(x + I) = x + IS.
+          \]
+          This is a ring homomorphism, as \[
+              \varphi((x+I)(y+I) + (z+I)) = \varphi((xy+z)+I) = (xy+z)+IS = (x+IS)(y+IS)+(z+IS) = \varphi(x+I)\varphi(y+I) + \varphi(z+I).
+          \]
+          We can do this because for any ideal \( I \) of \( R \), \( IS \) is an ideal of \( S \) if \( R \) is a subring of \( S \). \(\hfill \blacksquare\)
+\end{enumerate}
 
 \end{document}
