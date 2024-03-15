@@ -278,9 +278,11 @@ Now it's not hard to see $\psi$ is a surjective homomorphism. We will compute th
           \[
               \varphi(x + I) = x + J.
           \]
-          This is a ring homomorphism, as \[
-              \varphi((x+I)(y+I) + (z+I)) = \varphi((xy+z)+I) = (xy+z)+J = (x+J)(y+J)+(z+J) = \varphi(x+I)\varphi(y+I) + \varphi(z+I).
-          \]
+          This is a ring homomorphism, as \begin{align*}
+            \varphi((x+I)(y+I) + (z+I))& = \varphi((xy+z)+I) = (xy+z)+J \\
+            = (x+J)(y+J)+(z+J) &= \varphi(x+I)\varphi(y+I) + \varphi(z+I).
+          \end{align*}
+              
           This is surjective as given any \( x+J \in R/J, x \in R \), we get \( \varphi(x+I) = x+J \). We can do this because \( I \subseteq J \) means \( x \notin J \implies x \notin I \). \(\hfill \blacksquare\)
           \smallskip
 
@@ -288,9 +290,12 @@ Now it's not hard to see $\psi$ is a surjective homomorphism. We will compute th
           \[
               \varphi(x + I) = x + IS.
           \]
-          This is a ring homomorphism, as \[
-              \varphi((x+I)(y+I) + (z+I)) = \varphi((xy+z)+I) = (xy+z)+IS = (x+IS)(y+IS)+(z+IS) = \varphi(x+I)\varphi(y+I) + \varphi(z+I).
-          \]
+          This is a ring homomorphism, as \begin{align*}
+            \varphi((x+I)(y+I) + (z+I)) &= \varphi((xy+z)+I) = (xy+z)+IS \\
+            &= (x+IS)(y+IS)+(z+IS)= \varphi(x+I)\varphi(y+I) + \varphi(z+I).
+          \end{align*}
+             
+          
           We can do this because for any ideal \( I \) of \( R \), \( IS \) is an ideal of \( S \) if \( R \) is a subring of \( S \). \(\hfill \blacksquare\)
 \end{enumerate}
 
