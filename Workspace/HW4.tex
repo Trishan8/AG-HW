@@ -239,9 +239,11 @@ We mimic the proofs in 3.22 to get the following generalization. Let \( m = m_P(
 
 \begin{enumerate}[label = (\alph*)]
     \item Let \( T = (T_1, \dots, T_m): \mathbbm{A}^n \to \mathbbm{A}^m \) be an affine change of coordinates, with \( T_i(X) = \sum_{j=1}^{n}f_{i,j}X_j + f_i \). Let \( R \) be any point on the line \( PQ \), so that \( R_j = P_j + t(Q_j-P_j) \) for all \( j \), for some fixed \( t \in k \). Then,
-          \[
-              T(R)_i = T_i(R) = \sum_{j=1}^{n}f_{i,j}R_j + f_i = \qty(\sum_{j=1}^{n}f_{i,j}P_j + f_i) + t \qty(\sum_{j=1}^{n}f_{i,j}Q_j - f_{i,j}P_j) = T_i(P) + t(T_i(Q)-T_i(P))
-          \]
+          \begin{align*}
+            T(R)_i = T_i(R) &= \sum_{j=1}^{n}f_{i,j}R_j + f_i \\= \qty(\sum_{j=1}^{n}f_{i,j}P_j + f_i) + &t \qty(\sum_{j=1}^{n}f_{i,j}Q_j - f_{i,j}P_j) = T_i(P) + t(T_i(Q)-T_i(P))
+          \end{align*}
+            
+          
           and so, \( T(R)_i = T(P)_i + t(T(Q)_i-T(P)_i) \) for all \( i \). Hence, \( T(R) \) is a point on the line joining \( T(P) \) and \( T(Q) \), i.e, \( T(L) \) is the line through \( T(P) \) and \( T(Q) \). \(\hfill \blacksquare\)
           \smallskip
 
