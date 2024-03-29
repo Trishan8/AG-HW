@@ -8,6 +8,10 @@
 \begin{document}
 \maketitle
 
-\section*{Problem \textcolor{maroon}{3.4}}
+\section*{Problem \textcolor{maroon}{5.14}}
+We will begin with the assumption, the underlying field $k$ is infinte and algebraically closed (according to contexts). The property of lines passing through points is a projective property. So we can take a suitable projective transformation so that $P_1 = [0:0:1]$. Thus, any line passing through this looks like $ax +by = 0$ where $a,b \in k$. The set of lines passing through $P_1$ is $$A = \qty{x+my : m \in k} \cup \qty{y=0}$$ Since, the field is infinite, there is infinitely many elements in $A$. Given two points in $\mathbb{P}^2$ there is a unique line passing through $P_1$ and that point. Thus the set of lines $$L=\qty{\ell \text{ pass through } P_1 \text{ and }P_{i} : 2 \leq i \leq n} \subset A$$ is finite. So there are only finitely many line in the above set. But in $A$ there are infinitely elements. So, there are infinitely many elements in $A \setminus L$.
 
-\end{document}
+\vspace*{0.2cm}
+
+\noindent Since $P_1$ is a simple point of $F$, there is a tangent $T$ at $P$ so that the tangent $T$ don't contained in $V(F)$ (or $F$). From the problem \textcolor{maroon}{5.12} we can say, $$\sum I(P;F\cap T)=n$$ where $n = \deg F$. Thus, If we take $P_2,\cdots,P_m$ be the other intersection points (here $m \leq n$) of $T$ and $F$, by the previous calculation we can say there exists infinitely many lines through $P$ don't intersect $F$ at $P_i$ ($i >1$). These lines are transversal to $F$. $\hfill \blacksquare$
+\end{document} 
