@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.12) (preloaded format=pdflatex 2024.2.26)  29 MAR 2024 19:45
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.12) (preloaded format=pdflatex 2024.2.26)  30 MAR 2024 23:43
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -825,7 +825,7 @@ LaTeX Font Warning: Font shape `OT1/cmss/bx/n' in size <15> not available
 
 [1
 
-{C:/Users/trish/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}] (HW5.aux)
+{C:/Users/trish/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}] [2] (HW5.aux)
  ***********
 LaTeX2e <2023-11-01>
 L3 programming layer <2023-12-11>
@@ -839,17 +839,17 @@ Package rerunfilecheck Info: File `HW5.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 31469 strings out of 474495
- 633861 string characters out of 5743935
- 1935460 words of memory out of 5000000
- 53196 multiletter control sequences out of 15000+600000
+ 31474 strings out of 474495
+ 633981 string characters out of 5743935
+ 1943460 words of memory out of 5000000
+ 53200 multiletter control sequences out of 15000+600000
  567510 words of font info for 75 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 116i,6n,121p,949b,439s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 116i,14n,121p,949b,442s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/trish/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/trish/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/trish/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/trish/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/trish/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/trish/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/trish/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><C:/Users/trish/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/trish/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Users/trish/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on HW5.pdf (1 page, 114655 bytes).
+Output written on HW5.pdf (2 pages, 121538 bytes).
 PDF statistics:
- 100 PDF objects out of 1000 (max. 8388607)
- 2 named destinations out of 1000 (max. 500000)
+ 104 PDF objects out of 1000 (max. 8388607)
+ 3 named destinations out of 1000 (max. 500000)
  157 words of extra memory for PDF output out of 10000 (max. 10000000)
 

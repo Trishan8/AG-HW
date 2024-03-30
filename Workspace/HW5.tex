@@ -14,4 +14,19 @@ We will begin with the assumption, the underlying field $k$ is infinte and algeb
 \vspace*{0.2cm}
 
 \noindent Since $P_1$ is a simple point of $F$, there is a tangent $T$ at $P$ so that the tangent $T$ don't contained in $V(F)$ (or $F$). From the problem \textcolor{maroon}{5.12} we can say, $$\sum I(P;F\cap T)=n$$ where $n = \deg F$. Thus, If we take $P_2,\cdots,P_m$ be the other intersection points (here $m \leq n$) of $T$ and $F$, by the previous calculation we can say there exists infinitely many lines through $P$ don't intersect $F$ at $P_i$ ($i >1$). These lines are transversal to $F$. $\hfill \blacksquare$
+
+\section*{Problem \textcolor{maroon}{5.18}}
+
+Let us consider the general equation of conic in $\mathbb{P}^2$, that is $$Ax^2+By^2+Cz^2+Exy+Fyz + G zx =0$$ Since the pont $[0:0:1]$ and $[0:1:0]$, $[1:0:0]$ passes through  the above conic we can say, $A=B=C=0$. Thus the equation of conic reduces to $E xy + Fyz+Gzx=0$. Also the points $[1:1:1]$ and $[1:2:3]$ passes through the curve. So we have the following linear equations, 
+\begin{align*}
+     E+F+G &=0\\
+     2E+6F +3G &=0 \\
+     \implies \begin{pmatrix}
+        1 & 1 & 1\\
+        2 & 6 & 3
+     \end{pmatrix} \begin{pmatrix}
+        E \\ F \\ G
+     \end{pmatrix} & = 0
+\end{align*}
+Note that the rows of the aboe matrix are linearly independent. So the null space of it must have dimension $1$. Note that $(3, \, -4, \,1)^T$ is a solution to the above matrix equation. Since the dimension of null space is $1$ we can say any other solution must be a scaler multiple of $(3,\, -4, \,1)^T$. So the equation of conic passing through the five  points is $\lambda (3xy -4yz+zx)=0$. This will represent a unique conic in $\mathbb{P}^2$. By contruction the conic is unique! $\hfill \blacksquare$ 
 \end{document} 
