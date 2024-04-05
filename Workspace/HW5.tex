@@ -47,7 +47,7 @@ here, $\textcolor{maroon}{\ast}$ comes from the \textcolor{maroon}{corollary 1} 
 \begin{align*}
    \sum_P \frac{m_P(F)(m_P(F)-1)}{2} 
    &= \sum_{P} \frac{m_P(F_1)(m_P(F_1)-1)}{2} + \sum_{P} \frac{m_P(F_2)(m_P(F_2)-1)}{2}  \\&+ \sum_{P}m_P(F_1)m_P(F_2)\\
-   & \leq \frac{(p-1)(p-2)}{2}+c-2+\frac{(q-1)(q-2)}{2} + pq\\
+   & \leq \underbrace{\frac{(p-1)(p-2)}{2}+c-2}_{\text{induction step}}+\frac{(q-1)(q-2)}{2} + pq\\
    &= \frac{(p+q-1)(p+q-2)}{2} +c-1 = \frac{(n-1)(n-2)}{2}+c-1
 \end{align*}
 Thus our induction step is complete. It's not hard to note that a polynomial of degree $n$ can have at most $n$ linear factor, i.e atmost $n$ simple components. Thus $c \leq n$ and hence the final term in the above calculation is bounded above by $n(n-1)/2$. $\hfill\blacksquare$
