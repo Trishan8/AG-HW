@@ -29,4 +29,26 @@ Let us consider the general equation of conic in $\mathbb{P}^2$, that is $$Ax^2+
      \end{pmatrix} & = 0
 \end{align*}
 Note that the rows of the aboe matrix are linearly independent. So the null space of it must have dimension $1$. Note that $(3, \, -4, \,1)^T$ is a solution to the above matrix equation. Since the dimension of null space is $1$ we can say any other solution must be a scaler multiple of $(3,\, -4, \,1)^T$. So the equation of conic passing through the five  points is $\lambda (3xy -4yz+zx)=0$. This will represent a unique conic in $\mathbb{P}^2$. By contruction the conic is unique! $\hfill \blacksquare$ 
+
+\section*{Problem \textcolor{maroon}{5.25}}
+
+Since the polynomial $F=F_1F_2$ have $c\geq 1$ simple component, the polynomial may not be irreducible. Let, $F=F_1F_2$ and at every point $P$, $m_P(F)= m_P(F_1)+m_P(F_2)$. Thus, \begin{align*}
+   \sum_P \frac{m_P(F)(m_P(F)-1)}{2} &= \sum_{P} \frac{(m_P(F_1)+m_P(F_2))(m_P(F_1)+m_P(F_2)-1)}{2} \\
+   &= \sum_{P} \frac{m_P(F_1)(m_P(F_1)-1)}{2} + \sum_{P} \frac{m_P(F_2)(m_P(F_2)-1)}{2}  \\&+ \sum_{P}m_P(F_1)m_P(F_2)
+\end{align*}
+Let, $p = \deg F_1$ and $q = \deg F_2$. If $F_1$ and $F_2$ were irreducible then we must have \begin{align*}
+   \sum_P \frac{m_P(F)(m_P(F)-1)}{2} 
+   &= \sum_{P} \frac{m_P(F_1)(m_P(F_1)-1)}{2} + \sum_{P} \frac{m_P(F_2)(m_P(F_2)-1)}{2}  \\&+ \sum_{P}m_P(F_1)m_P(F_2) \\
+   &\overset{\textcolor{maroon}{\ast}}{\leq} \frac{(p-1)(p-2)}{2}+\frac{(q-1)(q-2)}{2} + pq \\
+   &= \frac{(p+q-1)(p+q-2)}{2} +1 \\
+   &= \frac{(n-1)(n-2)}{2}+1
+\end{align*}
+here, $\textcolor{maroon}{\ast}$ comes from the \textcolor{maroon}{corollary 1} of B\'ezout's theorem and theorem of section \textcolor{maroon}{5.4}. In this case we had $c=2$. Now we will proceed using induction. Assume the result is true for some curve with $c-1$ simple components. Again assume $F=F1F_2$ with the degrees mentioned above and $F_1$ has $c-1$-simple components and $F_2$ is irreducible. Thus using induction we have, 
+\begin{align*}
+   \sum_P \frac{m_P(F)(m_P(F)-1)}{2} 
+   &= \sum_{P} \frac{m_P(F_1)(m_P(F_1)-1)}{2} + \sum_{P} \frac{m_P(F_2)(m_P(F_2)-1)}{2}  \\&+ \sum_{P}m_P(F_1)m_P(F_2)\\
+   & \leq \frac{(p-1)(p-2)}{2}+c-2+\frac{(q-1)(q-2)}{2} + pq\\
+   &= \frac{(p+q-1)(p+q-2)}{2} +c-1 = \frac{(n-1)(n-2)}{2}+c-1
+\end{align*}
+Thus our induction step is complete. It's not hard to note that a polynomial of degree $n$ can have at most $n$ linear factor, i.e atmost $n$ simple components. Thus $c \leq n$ and hence the final term in the above calculation is bounded above by $n(n-1)/2$. $\hfill\blacksquare$
 \end{document} 
