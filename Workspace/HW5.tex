@@ -8,6 +8,28 @@
 \begin{document}
 \maketitle
 
+\section*{Problem \textcolor{maroon}{5.12}}
+\textbf{Part (a).} Let $P \in [0:1:0] \in F$ where $F$ is a curve of degree of $n$. Let $F(X,Y,Z) = \sum_{i=0}^n F_i(Y,Z)X^i$ with $F_i$ is a form of degree $n-i$ with $F_0 \neq 0$ and let $F_0(Y,Z) = \sum_{i=m}^{m+k} a_i Y^i Z^{n-i}$ (with $m,k \geq 0$ and $m+k \leq n-1$, there is no $Y^n$ term as $P = [0:1:0] \in F$). 
+\begin{align*}
+   \sum_{P \in \mathbb{P}^2} I(P, F \cap X) &= \sum_{P \in F_0 \cap X} I(P, F_0 \cap X) \\ 
+   &= \sum_{P \in F_0 \cap X \cap U_1} I(P, F_0 \cap X) + I([0:0:1], F_0 \cap X) \\ 
+   &= \sum_{t \in k} I([0:1:t], F_0 \cap X) + I([0:0:1], F_0 \cap X) \\
+   &= \sum_{t \in k} \dim_k \left( \mathscr{O}_{[0:1:t]}(\mathbb{P}^2)/(F_{0*} \cap X_*)\right) + \dim_k \left( \mathscr{O}_{[0:0:1]}(\mathbb{P}^2)/(F_{0*} \cap X_*) \right) \\ 
+   &= \sum_{t \in k} \dim_k\left( \mathscr{O}_{(0,t)}(\mathbb{A}^2)/(F_0(1,Z),X)\mathscr{O}_{(0,t)}(\mathbb{A}^2) \right) + \dim_k \left( \mathscr{O}_{(0,0)}(\mathbb{P}^2)/(F_0(Y,1),X)\mathscr{O}_{(0,0)}(\mathbb{A}^2) \right) \\ 
+   &= \sum_{t \in k} I((0,t), F_0(1,Z) \cap X) + \mathrm{ord}_{(0,0)}^X(F_0(Y,1)) \\ 
+   &= \sum_{P \in F_0(1,Z) \cap X} I(P, F_0(1,Z) \cap X) + \mathrm{ord}^X_{(0,0)}(F_0(Y,1)) \\ 
+   &= \deg F_0(1,Z) \deg X + m \\ 
+   &= (n-m) + m = n.
+\end{align*}
+Hence we have proved that $\sum_{P \in \mathbb{P}^2} I(P, F \cap X) = n$. 
+
+\ 
+
+\noindent\textbf{Part (b).} Now if $L$ is not a line contained in $F$, we can find a projective transformation taking $P \in F \mapsto [0:1:0]$ and $L \mapsto X$, then by part (a), we get that 
+\begin{align*}
+   \sum_{P \in \mathbb{P}^2} I(P, F \cap L) = n.
+\end{align*}
+
 \section*{Problem \textcolor{maroon}{5.14}}
 We will begin with the assumption, the underlying field $k$ is infinte and algebraically closed (according to contexts). The property of lines passing through points is a projective property. So we can take a suitable projective transformation so that $P_1 = [0:0:1]$. Thus, any line passing through this looks like $ax +by = 0$ where $a,b \in k$. The set of lines passing through $P_1$ is $$A = \qty{x+my : m \in k} \cup \qty{y=0}$$ Since, the field is infinite, there is infinitely many elements in $A$. Given two points in $\mathbb{P}^2$ there is a unique line passing through $P_1$ and that point. Thus the set of lines $$L=\qty{\ell \text{ pass through } P_1 \text{ and }P_{i} : 2 \leq i \leq n} \subset A$$ is finite. So there are only finitely many line in the above set. But in $A$ there are infinitely elements. So, there are infinitely many elements in $A \setminus L$.
 
