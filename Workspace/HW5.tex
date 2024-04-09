@@ -8,6 +8,23 @@
 \begin{document}
 \maketitle
 
+\section*{Problem \textcolor{maroon}{5.5}}
+Let $F(X,Y,Z) = \sum_{i=m}^n F_i(X,Z) Y^{n-i}$. Then for $P = [0:1:0]$
+\begin{align*}
+   m_P(F) &= m_{\varphi(P)}(F_*) \\ 
+   &= m_{(0,0)}(\sum_{i=m}^n F_i(X,Z)) \\ 
+   &= m.
+\end{align*}
+
+A line $L$ is tangent to $F$ if and only if $I(P, F \cap L) > m_p(F)$, thus we must have 
+\begin{align*}
+   I(P,F \cap L) &= \dim_{k} \mathscr{O}_P(\mathbb{P}^2)/(F_*,L_*) \\
+   &= \dim_k \mathscr{O}_P(\mathbb{P}^2)/(F(X/Y,1,Z/Y), L/Y) \\ 
+   &= \dim_k \mathscr{O}_{(0,0)}(\mathbb{A}^2)/(F(X,1,Z), L(X,1,Z)) \mathscr{O}_{(0,0)}(\mathbb{A}^2) \\ 
+   &= I((0,0), F(X,1,Z) \cap L(X,1,Z)).
+\end{align*}
+Thus we get that $I((0,0), F(X,1,Z) \cap L(X,1,Z)) > m$, hence $L(X,1,Z)$ is tangent to $F(X,1,Z)$, thus it must be a factor of $F_m(X,Z)$ (by defnition of tangent for an affine curve). Therefore, the tangents to $F$ are determined by the factors of $F_m(X,Z)$.
+
 \section*{Problem \textcolor{maroon}{5.12}}
 \textbf{Part (a).} Let $P \in [0:1:0] \in F$ where $F$ is a curve of degree of $n$. Let $F(X,Y,Z) = \sum_{i=0}^n F_i(Y,Z)X^i$ with $F_i$ is a form of degree $n-i$ with $F_0 \neq 0$ and let $F_0(Y,Z) = \sum_{i=m}^{m+k} a_i Y^i Z^{n-i}$ (with $m,k \geq 0$ and $m+k \leq n-1$, there is no $Y^n$ term as $P = [0:1:0] \in F$). 
 \begin{align*}
