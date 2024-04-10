@@ -76,6 +76,30 @@ Let us consider the general equation of conic in $\mathbb{P}^2$, that is $$Ax^2+
 \end{align*}
 Note that the rows of the aboe matrix are linearly independent. So the null space of it must have dimension $1$. Note that $(3, \, -4, \,1)^T$ is a solution to the above matrix equation. Since the dimension of null space is $1$ we can say any other solution must be a scaler multiple of $(3,\, -4, \,1)^T$. So the equation of conic passing through the five  points is $\lambda (3xy -4yz+zx)=0$. This will represent a unique conic in $\mathbb{P}^2$. By contruction the conic is unique! $\hfill \blacksquare$ 
 
+\section*{Problem \textcolor{maroon}{5.19}}
+
+Let us consider an arbitrary cubic 
+\begin{align*}
+   aX^3 + bX^2Y + cX^2Z + d Y^3 + e XY^2 + f Y^2 Z + g Z^3 + h XZ^2 + i YZ^2 + j XYZ
+\end{align*}
+Now given that the cubic passes through the following points: $[0 : 0 : 1]$, $[0 : 1 : 1]$, $[1 : 0 : 1]$, $[1 : 1 : 1]$, $[0 : 2 : 1]$, $[2 : 0 : 1]$, $[1 : 2 : 1]$, $[2 : 1 : 1]$, and $[2 : 2 : 1]$ gives us
+\begin{align*}
+   \begin{pmatrix}
+      0 & 0 & 0 & 0 & 0 & 0 & 1 & 0 & 0 & 0 \\
+      0 & 0 & 0 & 1 & 0 & 1 & 1 & 0 & 1 & 0 \\ 
+      1 & 0 & 1 & 0 & 0 & 0 & 1 & 1 & 0 & 0 \\ 
+      1 & 1 & 1 & 1 & 1 & 1 & 1 & 1 & 1 & 1 \\ 
+      0 & 0 & 0 & 8 & 0 & 4 & 1 & 0 & 2 & 0 \\ 
+      8 & 0 & 4 & 0 & 0 & 0 & 1 & 2 & 0 & 0 \\ 
+      2 & 2 & 1 & 8 & 4 & 4 & 1 & 1 & 2 & 2 \\ 
+      8 & 4 & 4 & 1 & 2 & 1 & 1 & 2 & 1 & 2 \\ 
+      8 & 8 & 4 & 8 & 8 & 4 & 1 & 2 & 2 & 4
+   \end{pmatrix}\begin{pmatrix}
+      a \\ b \\ c \\ d \\ e \\ f \\ g \\ h \\ i \\ j 
+   \end{pmatrix} = \mathbf{0}.
+\end{align*}
+The rank of the above matrix is $9$, thus the dimension of the kernel is $1$, hence there exists an unique cubic passing through all the points.
+
 \section*{Problem \textcolor{maroon}{5.25}}
 
 Since the polynomial $F=F_1F_2$ have $c\geq 1$ simple component, the polynomial may not be irreducible. Let, $F=F_1F_2$ and at every point $P$, $m_P(F)= m_P(F_1)+m_P(F_2)$. Thus, \begin{align*}
