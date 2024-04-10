@@ -25,6 +25,13 @@ A line $L$ is tangent to $F$ if and only if $I(P, F \cap L) > m_p(F)$, thus we m
 \end{align*}
 Thus we get that $I((0,0), F(X,1,Z) \cap L(X,1,Z)) > m$, hence $L(X,1,Z)$ is tangent to $F(X,1,Z)$, thus it must be a factor of $F_m(X,Z)$ (by defnition of tangent for an affine curve). Therefore, the tangents to $F$ are determined by the factors of $F_m(X,Z)$.
 
+\section*{Problem \textcolor{maroon}{5.7}}
+Let $F$ and $G$ be two plane curves with no common components. Let $L$ be a line not contained in $V(FG) \subseteq \mathbb{P}^2$. Then by problem 12, we know that $F \cap L$ and $G \cap L$ are finite. Now there exists a projective transformation that takes the line $L$ to $Z$. Then under this projective transformation we know that intersection numbers of $F$ and $G$ are preserved. And we have 
+\begin{align*}
+   F \cap G = (\underbrace{(F \cap U) \cap (G \cap U)}_{A}) \cup (\underbrace{(F \cap Z) \cup (G \cap Z)}_{B})
+\end{align*}
+where $U = \{ [x:y:z] \in \mathbb{P}^2 \mid z = 1 \}$. Note that $B$ is finite by the choice of the line $L$. Now $F \cap U$ and $G \cap U$ are affine curves given by $f = F(X,Y,1)$ and $g = G(X,Y,1)$. Now since $F$ and $G$ does not have any common component so does $f$ and $g$ (since otherwise we would have $hp = f$ and $hq = g$ for some $h,p,q \in k[X,Y]$, then $h^* p^* = F$ and $h^* q^* = G$, but then $h^*$ is a common component of $F$ and $G$, contradiction!). But we have previously shown that if two affine curves have no common component then $f \cap g$ is finite. Hence both $A$ and $B$ are finite, thus $F \cap G$ is finite. 
+
 \section*{Problem \textcolor{maroon}{5.12}}
 \textbf{Part (a).} Let $P \in [0:1:0] \in F$ where $F$ is a curve of degree of $n$. Let $F(X,Y,Z) = \sum_{i=0}^n F_i(Y,Z)X^i$ with $F_i$ is a form of degree $n-i$ with $F_0 \neq 0$ and let $F_0(Y,Z) = \sum_{i=m}^{m+k} a_i Y^i Z^{n-i}$ (with $m,k \geq 0$ and $m+k \leq n-1$, there is no $Y^n$ term as $P = [0:1:0] \in F$). 
 \begin{align*}
