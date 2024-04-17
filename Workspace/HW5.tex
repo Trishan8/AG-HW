@@ -143,14 +143,14 @@ We have,
 Hence, \( [x,y,z] \) is a simple point of \( F \) iff \( x^{p+1} = y^pz \) and one of \( x,y \) is non-zero. The tangent to \( F \) at such a point is then given by \( x^p X -y^p Z = 0 \), which clearly passes through the point \( [0,1,0] \) as required. \(\hfill \blacksquare\)
 
 \section*{Problem \color{maroon}{5.31}}
-\textbf{Part (a).} Applying the Pascal's theorem with $P_1 = P_2$, $P_3 = P_4$ and $P_5 = P_6$ we get that, for any triangle $P_1P_3P_5$ inscribed on a cubic, the intersection of the tangent at each vertex with the opposite side of the triangle are collinear. In the given figure $P_1P_3P_5$ is the triangle inscribed on a cubic, and the tangent at $P_1$ intersects the opposite side $P_3P_5$ at $D$, we similarly define $E$ and $F$, then $D,E$ and $F$ are collinear. 
+\textbf{Part (a).} Applying the Pascal's theorem with $P_1 = P_2$, $P_3 = P_4$ and $P_5 = P_6$ we get that, for any triangle $P_1P_3P_5$ inscribed on a cubic, the intersection of the tangent at each vertex with the opposite side of the triangle are collinear. In the given figure $P_1P_3P_5$ is the triangle inscribed on a cubic, and the tangent at $P_1$ intersects the opposite side $P_3P_5$ at $D$, we similarly define $E$ and $F$, then $D,E$ and $F$ are collinear.
 \begin{figure}[H]
    \centering
    \includegraphics[width=0.8\textwidth]{pascal1.png}
    \caption{Sketch of Pascal's thoerem for $P_1 = P_2$, $P_3 = P_4$ and $P_5 = P_6$.}
 \end{figure}
 
-\textbf{Part (b).} Applying the Pascal Theorem with $P_1 = P_2$, we get that for any arbitrary five points $P_1, P_3, P_4, P_5, P_6$ on a cubic, let $E = P_1 P_3 \cap P_5 P_6$ and $F = P_1 P_6 \cap P_3 P_4$ and let $D = EF \cap P_4 P_5$, then $DA$ is the tangent at $A$ to the given cubic. 
+\textbf{Part (b).} Applying the Pascal Theorem with $P_1 = P_2$, we get that for any arbitrary five points $P_1, P_3, P_4, P_5, P_6$ on a cubic, let $E = P_1 P_3 \cap P_5 P_6$ and $F = P_1 P_6 \cap P_3 P_4$ and let $D = EF \cap P_4 P_5$, then $DA$ is the tangent at $A$ to the given cubic.
 \begin{figure}[H]
    \centering
    \includegraphics[width=0.8\textwidth]{pascal2.png}
@@ -159,5 +159,18 @@ Hence, \( [x,y,z] \) is a simple point of \( F \) iff \( x^{p+1} = y^pz \) and o
 
 \textbf{Part (c).} Using part (b), given any point $P$ and a conic $\mathcal{C}$, we can construct a tangent at $P$ to $\mathcal{C}$, as follows: let $P_1, \dots, P_4$ be four distinct points on the conic $\mathcal{C}$. Now let $E = PP_1 \cap P_3P_4$ and $F = PP_4 \cap P_1 P_2$ and let $D = EF \cap P_2P_3$, then $DP$ is the tangent at $P$ to $\mathcal{C}$. Thus we can construct the tangent on a cubic, using only a straight-edge.
 
+\section*{Problem \textcolor{maroon}{5.34}}
+Let \( P,Q \) be two flex points on a cubic curve \( C \), and suppose that the line \( L \) through \( P,Q \) satisfies \( L \cdot C = P+Q+R \). We will show that \( R \) is also a flex.
+
+Consider the tangents \( L_P, L_Q, L_R \) to \( C \) at \( P,Q,R \) respectively. Then, by definition of intersection cycles and what it means to be a flex,
+\[
+   L_P \cdot C =  3P, \quad L_Q \cdot C = 3Q, \quad L_R \cdot C = 2R+S
+\]
+where \( S \) is some point of \( C \). Hence,
+\[
+   (L_P \cup L_Q \cup L_R) \cdot C = 3P+3Q+2R+S =(2P+2Q+2R) + (P+Q+S) \geq 2(L \cdot C) .
+\]
+
+Because \( L \cap C \) consists of the simple points \( P,Q,R \) of \( C \), we get by the corollary to the proposition on Noether's condition that there exists a curve \( L' \) such that \( L' \cdot C = (L_P \cup L_Q \cup L_R) \cdot C - 2(L \cdot C) = P+Q+S \), and we must have that \( \deg L' = 3-2 = 1 \). Hence, \( L' \) is a line passing through \( P,Q \), and so \( L' = L \). This finally gives that \( R = S \), and so \( L_R \cdot C = 3R \), that is, \( R \) is a flex of \( C \). \(\hfill \blacksquare\)
 
 \end{document}
