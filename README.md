@@ -12,6 +12,6 @@
 - [x] Homework-4
    - AC Chapter 3 - 3.4,3.6,3.8,3.12,3.13,3.15,3.16,3.19,3.22,3.23,3.24
    - Complete the proofs of this chapter which are incomplete.
-- [ ] Homework-5
+- [x] Homework-5
    - AC chapter 5 - 5.12. 5.14, 5.18, 5.19, 5.25, 5.28, 5.31, 5.34
    - Complete the proofs of this chapter which are incomplete.
